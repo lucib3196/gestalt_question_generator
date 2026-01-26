@@ -1,0 +1,19 @@
+{
+  "question": {
+    "question_text": "A car is traveling along a straight rode at a constant speed of 100mph for 5 hours calculate the total distance traveled",
+    "solution_guide": null,
+    "final_answer": null,
+    "question_html": "<pl-question-panel>\n  <p>A car is traveling along a straight road at a constant speed of {{params.speed}} {{params.unitsSpeed}} for {{params.time}} {{params.unitsTime}}.</p>\n  <p>Calculate the total distance traveled.</p>\n</pl-question-panel>\n\n<pl-number-input answers-name=\"distance\" comparison=\"sigfigs\" digits=\"3\" label=\"Total distance traveled ({{params.unitsDistance}})\"></pl-number-input>"
+  },
+  "metadata": {
+    "title": "TotalDistanceTraveledByCar",
+    "question_types": ["computational"],
+    "topics": ["Physics", "Kinematics", "Distance"]
+  },
+  "isAdaptive": true,
+  "files": {
+    "question.html": "<pl-question-panel>\n  <p>A car is traveling along a straight road at a constant speed of {{params.speed}} {{params.unitsSpeed}} for {{params.time}} {{params.unitsTime}}.</p>\n  <p>Calculate the total distance traveled.</p>\n</pl-question-panel>\n\n<pl-number-input answers-name=\"distance\" comparison=\"sigfigs\" digits=\"3\" label=\"Total distance traveled ({{params.unitsDistance}})\"></pl-number-input>",
+    "solution.html": "<pl-solution-panel>\n\n<pl-question-panel>\n  <p>A car is traveling along a straight road at a constant speed of {{params.speed}} {{params.unitsSpeed}} for {{params.time}} {{params.unitsTime}}.</p>\n  <p>Calculate the total distance traveled.</p>\n</pl-question-panel>\n\n<pl-hint-explanation>\n  <h3>1. Known Variables</h3>\n  <p>The speed of the car is {{params.speed}} {{params.unitsSpeed}}.</p>\n  <p>The time of travel is {{params.time}} {{params.unitsTime}}.</p>\n</pl-hint-explanation>\n\n<pl-hint-explanation>\n  <h3>2. Governing Equation</h3>\n  <p>The formula for calculating the distance when an object moves at constant speed is:</p>\n  $$ d = v \\cdot t $$\n  <p>where:</p>\n  <ul>\n    <li><em>d</em> is the distance traveled.</li>\n    <li><em>v</em> is the velocity (or speed).</li>\n    <li><em>t</em> is the time.</li>\n  </ul>\n</pl-hint-explanation>\n\n<pl-hint level=\"1\">\n  <h3>3. Substitution with Known Values</h3>\n  <p>Substitute the given values into the equation:</p>\n  $$ d = {{params.speed}} \\times {{params.time}} $$\n</pl-hint>\n\n<pl-hint level=\"2\">\n  <h3>4. Calculation</h3>\n  <p>Calculate the distance using the substituted values:</p>\n  <p>Assume if the units of speed are given as km/h and time in hours, the multiplication would directly give: </p>\n  $$ d = {{params.speed \\times params.time}} \\ {{params.unitsDistance}} $$\n</pl-hint>\n\n<pl-hint level=\"3\">\n  <h3>5. Final Result</h3>\n  <p>The total distance traveled by the car is:</p>\n  <p><strong>{{params.speed \\times params.time}} {{params.unitsDistance}}</strong></p>\n</pl-hint>\n\n</pl-solution-panel>",
+    "info.json": "{\"title\": \"TotalDistanceTraveledByCar\", \"question_types\": [\"computational\"], \"topics\": [\"Physics\", \"Kinematics\", \"Distance\"], \"ai_generated\": true, \"languages\": [\"javascript\", \"python\"], \"isAdaptive\": true}"
+  }
+}
