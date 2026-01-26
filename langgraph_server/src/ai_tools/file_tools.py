@@ -6,9 +6,6 @@ import base64
 import io
 import zipfile
 
-output = get_settings().output_path
-OUTPUT_DIR = Path(output).resolve()
-OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 
 
 @tool
