@@ -5,6 +5,7 @@ QuestionTypes = Literal[
     "conceptual", "computational", "derivation", "analysis", "design"
 ]
 
+
 class Question(BaseModel):
     question_text: str
     solution_guide: str | None

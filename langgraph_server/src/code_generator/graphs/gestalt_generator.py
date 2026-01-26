@@ -1,41 +1,23 @@
-from typing import Annotated, TypedDict, Literal
-from pathlib import Path
 import json
+from pathlib import Path
+from typing import Annotated, Literal, Sequence, TypedDict
 
-from typing import Sequence
-
-# --- LangChain / LangGraph ---
-from langgraph.graph import START, StateGraph, END
 from langgraph.checkpoint.memory import MemorySaver
+from langgraph.graph import END, START, StateGraph
 
-from langgraph_server.gestalt_graphs.code_generator.graphs.question_html_graph import (
-    app as question_html_generator,
-    State as QState,
-)
-from langgraph_server.gestalt_graphs.code_generator.graphs.server_js_graph import (
-    app as server_py_generator,
-    State as JSState,
-    app as server_js_generator,
-)
+from src.models import Question
+from src.utils import save_graph_visualization, to_serializable
 
-from langgraph_server.gestalt_graphs.code_generator.graphs.solution_html_graph import (
-    app as solution_html_generator,
-    State as SolutionState,
-)
-from langgraph_server.gestalt_graphs.code_generator.graphs.question_metadata_graph import (
-    app as question_metadata_generator,
-)
-from langgraph_server.gestalt_graphs.code_generator.graphs.server_py_graph import (
-    app as server_py_generator,
-    State as PyState,
-)
-from langgraph_server.gestalt_graphs.models import Question
-from langgraph_server.gestalt_graphs.code_generator.graphs.question_metadata_graph import (
-    QuestionMetaData,
-)
-from langgraph_server.gestalt_graphs.utils.utils import (
-    save_graph_visualization,
-    to_serializable,
+from .question_metadata_graph import QuestionMetaData
+from . import (
+    JSState,
+    PyState,
+    QState,
+    SolutionState,
+    question_html_tool,
+    server_js_tool,
+    server_py_generator,
+    solution_html_tool,
 )
 
 
@@ -70,7 +52,7 @@ def generate_question_html(state: State):
         "formatted_examples": "",
     }
 
-    result = question_html_generator.invoke(input_state, config)  # type: ignore
+    result = question_html_tool.invoke(input_state, config)  # type: ignore
 
     updated_question = state["question"].model_copy(
         update={"question_html": result["question_html"]}
@@ -94,7 +76,7 @@ def generate_solution_html(state: State):
         "formatted_examples": "",
     }
 
-    result = solution_html_generator.invoke(input_state, config)  # type: ignore
+    result = solution_html_tool.invoke(input_state, config)  # type: ignore
 
     return {"files": {"solution.html": result["solution_html"]}}
 
@@ -111,7 +93,7 @@ def generate_server_js(state: State):
         "formatted_examples": "",
     }
 
-    result = server_js_generator.invoke(input_state, config)  # type: ignore
+    result = server_js_tool.invoke(input_state, config)  # type: ignore
 
     return {"files": {"server.js": result["server_js"]}}
 

@@ -1,40 +1,24 @@
-# --- Standard Library ---
 import json
 import operator
 import os
 from pathlib import Path
 from typing import Annotated, List, Literal, TypedDict
 
-# --- Local / Project Models ---
-from langgraph_server.gestalt_graphs.models  import (
-    Question,
-    CodeResponse,
-)
-
-# --- LangChain Integrations ---
-from langchain_openai import OpenAIEmbeddings
 from langchain_astradb import AstraDBVectorStore
 from langchain.chat_models import init_chat_model
 from langchain_core.documents import Document
 from langchain_core.prompts import ChatPromptTemplate
-
-# --- LangGraph ---
+from langchain_openai import OpenAIEmbeddings
 from langgraph.graph import END, START, StateGraph
 from langgraph.types import Command
-from langgraph_server.gestalt_graphs.code_validation.graph import (
-    State as CodeValidationState,
-    graph as code_validation_graph,
-)
+from langsmith import Client
 
-# --- Project Utilities ---
-from langgraph_server.gestalt_graphs.utils.utils import (
+from src.code_validation import CodeValidationState, code_validation_graph
+from src.models import CodeResponse, Question
+from src.utils import (
     save_graph_visualization,
     to_serializable,
 )
-
-
-# --- External Services ---
-from langsmith import Client
 
 
 model = init_chat_model(

@@ -1,17 +1,9 @@
 from langchain.agents import create_agent
 from langchain_core.tools import tool
-
-from langgraph_server.gestalt_graphs.models  import Question
-from langgraph_server.gestalt_graphs.code_generator.prompts.prompts import (
-    GESTALT_EDUCATOR_AGENT_PROMPT,
-)
-from langgraph_server.gestalt_graphs.ai_tools.ai_tools import (
-    prepare_zip,
-)
-from langgraph_server.gestalt_graphs.code_generator.graphs.gestalt_generator import (
-    app as gestalt_generator,
-    State as GestaltState,
-)
+from src.code_generator.graphs import gestalt_generator, GestaltState
+from src.code_generator.prompts import GESTALT_EDUCATOR_AGENT_PROMPT
+from src.ai_tools import prepare_zip
+from src.models import Question
 
 
 @tool
@@ -55,10 +47,10 @@ def generate_gestalt_module(
 
     isAdaptive : bool, default=True
         Controls whether the generated module is **adaptive** or **static**.
-        
+
         The question being adaptive tends to be the right choice in most cases
         unless you are working with a purely conceptual question which does not require any
-        computation. 
+        computation.
 
         - If `isAdaptive=True`:
           • The module supports runtime parameter generation.

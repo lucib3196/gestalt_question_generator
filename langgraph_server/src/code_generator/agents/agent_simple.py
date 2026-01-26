@@ -6,38 +6,19 @@ from langchain.agents import create_agent
 from langchain.chat_models import init_chat_model
 from langchain_core.documents import Document
 from langchain_core.tools import tool
-
-# --- Internal: Graph Apps & State ---
-from langgraph_server.gestalt_graphs.code_generator.graphs.question_html_graph import (
-    app as question_html_tool,
-    State as QState,
+from src.ai_tools import prepare_zip
+from src.code_generator.graphs import (
+    question_html_tool,
+    QState,
+    server_js_tool,
+    JSState,
+    solution_html_tool,
+    SolutionState,
+    server_py_generator,
+    PyState,
 )
-from langgraph_server.gestalt_graphs.code_generator.graphs.server_js_graph import (
-    app as server_js_tool,
-    State as JSState,
-)
-
-# --- Internal: Models ---
-from langgraph_server.gestalt_graphs.models  import Question
-from langgraph_server.gestalt_graphs.code_generator.graphs.solution_html_graph import (
-    app as solution_html_tool,
-    State as SolutionState,
-)
-
-# --- Internal: Prompts ---
-from langgraph_server.gestalt_graphs.code_generator.prompts.prompts import (
-    GESTALT_AGENT,
-)
-
-# --- Internal: Tools ---
-from langgraph_server.gestalt_graphs.ai_tools.ai_tools import (
-    prepare_zip,
-)
-from langgraph_server.gestalt_graphs.code_generator.graphs.server_py_graph import (
-    app as server_py_generator,
-    State as PyState,
-)
-
+from src.models import Question
+from src.code_generator.prompts import GESTALT_AGENT
 
 model = init_chat_model(
     model="gpt-4o",
