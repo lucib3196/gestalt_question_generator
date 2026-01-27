@@ -3,7 +3,7 @@ from typing import Dict, Literal, List
 
 ALLOWED_MODE = Literal["text", "file"]
 
-CHAT_NAMES = Literal["gestalt_generate_module", "gestalt_build_module"]
+CHAT_NAMES = Literal["gestalt_generate_module", "file_upload", "gestalt_build_module"]
 
 
 class ChatOption(BaseModel):
@@ -36,5 +36,12 @@ CHAT_OPTIONS: Dict[CHAT_NAMES, ChatOption] = {
             "of question, solution, server logic, and metadata files."
         ),
         active=True,
+    ),
+    "file_upload": ChatOption(
+        label="File Upload",
+        url="agent_gestalt",
+        description="File Upload",
+        active=True,
+        mode="file",
     ),
 }

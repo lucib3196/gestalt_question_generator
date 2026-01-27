@@ -1,4 +1,4 @@
-from core import init_session, get_settings
+from core import init_session
 from ui import (
     render_title,
     render_select_box,
