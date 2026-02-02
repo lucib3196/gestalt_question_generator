@@ -3,7 +3,6 @@ from pathlib import Path
 from typing import Any
 from langgraph.graph.state import CompiledStateGraph
 
-
 def write_image_data(image_bytes: bytes, folder_path: str | Path, filename: str) -> str:
     try:
         path = Path(folder_path).resolve()

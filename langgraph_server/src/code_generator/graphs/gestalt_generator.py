@@ -19,6 +19,10 @@ from . import (
     server_py_generator,
     solution_html_tool,
 )
+from src.code_generator.graphs.question_metadata_graph import (
+    app as question_metadata_graph,
+    State as MetadataState,
+)
 
 
 memory = MemorySaver()
@@ -34,8 +38,8 @@ class State(TypedDict):
 
 
 def classify_question(state: State):
-    input_state = {"question": state["question"], "metadata": None}
-    result = question_metadata_generator.invoke(input_state, config)  # type: ignore
+    input_state: MetadataState = {"question": state["question"], "metadata": None}
+    result = question_metadata_graph.invoke(input_state, config)  # type: ignore
 
     return {"metadata": result["metadata"]}
 
