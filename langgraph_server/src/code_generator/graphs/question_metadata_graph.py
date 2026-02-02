@@ -5,7 +5,7 @@ from pydantic import BaseModel, Field
 from langchain.chat_models import init_chat_model
 from langchain_core.prompts import ChatPromptTemplate
 from langgraph.graph import END, START, StateGraph
-
+from pydantic import Field
 from src.models import Question, QuestionTypes
 from src.utils import save_graph_visualization, to_serializable
 
@@ -31,20 +31,35 @@ class QuestionMetaData(BaseModel):
     title: str = Field(..., description="A concise title summarizing the question")
     question_types: List[QuestionTypes] = []
     topics: List[str] = Field(default=[])
+    isAdaptive: bool
 
 
-class State(TypedDict):
+class State(BaseModel):
     question: Question
-    metadata: QuestionMetaData | None
+    metadata: QuestionMetaData | None = Field(
+        default=None,
+        description="The metadata to generate",
+    )
+    isAdaptive: bool | None = Field(
+        default=None,
+        description="Whether the question is adaptive or not. If the None is passed it will auto generate during metadata generation. ",
+    )
 
 
 def generate_question_metadata(state: State):
-    question_text = state["question"].question_text
+    question_text = state.question.question_text
+
     structured_model = model.with_structured_output(QuestionMetaData)
     messages = prompt.format_prompt(question=question_text).to_messages()
+
     result = structured_model.invoke(messages)
-    result = QuestionMetaData.model_validate(result)
-    return {"metadata": result}
+    metadata = QuestionMetaData.model_validate(result)
+
+    # Override
+    if state.isAdaptive is not None:
+        metadata.isAdaptive = state.isAdaptive
+
+    return {"metadata": metadata}
 
 
 workflow = StateGraph(State)
@@ -65,7 +80,7 @@ if __name__ == "__main__":
         final_answer=None,
         question_html="",
     )
-    input_state: State = {"question": question, "metadata": None}
+    input_state: State = State(**{"question": question, "metadata": None})
     result = app.invoke(input_state, config=config)  # type: ignore
     print(result["metadata"])
 

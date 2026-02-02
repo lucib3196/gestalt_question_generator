@@ -191,47 +191,53 @@ def generate_server_py(
 
 @tool
 def generate_solution_html(
-    question_html: str, solution_guide: Optional[str] = None, isAdaptive: bool = False
+    question_html: str,
+    solution_guide: Optional[str] = None,
+    isAdaptive: bool = False,
+    server_file: str | None = None,
 ):
     """
     Generate a fully structured `solution.html` file that presents the
-    step-by-step solution and final answer for a question, grounded in
-    retrieved reference examples.
+    step-by-step solution and final answer for a question.
 
     This tool takes a **complete `question.html` file** as its primary
-    reference and an optional **solution guide**, and synthesizes a
+    reference and an optional **solution guide**, and produces a
     platform-compliant `solution.html` that:
     - Explains the reasoning and steps required to solve the question
-    - References variables, symbols, and structure defined in `question.html`
-    - Presents results clearly for both adaptive and non-adaptive questions
+    - Uses variables, symbols, and structure defined in `question.html`
+    - Produces a solution suitable for adaptive or non-adaptive execution
 
-    The `isAdaptive` flag indicates whether the question’s values are
-    dynamically generated at runtime:
-    - If `isAdaptive=True`, the solution is written generically and symbolically
-      to remain valid across parameter variations.
+    Optional Server File:
+    - A `server_file` may be provided when the question uses server-side logic
+      to generate parameters, values, or intermediate results.
+    - The server file is treated as the **source of truth** for generated
+      values and naming conventions.
+    - When provided, the solution HTML must reference and remain consistent
+      with the outputs, variables, and semantics defined by the server file.
+    - The solution HTML MUST NOT reimplement or duplicate server-side logic.
+
+    Adaptive Behavior:
+    - If `isAdaptive=True`, the solution is written symbolically and generically
+      so it remains valid across different parameter realizations.
     - If `isAdaptive=False`, the solution may include concrete values and
-      fixed computations.
+      explicit computations.
 
-    It returns TWO things:
+    This tool returns TWO outputs:
     1. A generated `solution.html` file containing the structured explanation,
        derivation, and final answer presentation.
-    2. The set of retrieved reference documents used to guide formatting,
-       structure, and instructional patterns.
-
-    The retrieved documents serve as **grounding context** and are intended for
-    internal inspection, debugging, or traceability. They SHOULD NOT be exposed
-    to end users unless explicitly requested.
+    2. The retrieved reference documents used to guide formatting and
+       instructional style.
 
     Use this tool when:
     - A finalized `question.html` already exists.
     - You need a clear, pedagogically sound solution presentation.
     - The solution must align structurally and semantically with the question.
-    - The question may be adaptive or non-adaptive, controlled via `isAdaptive`.
+    - The question may optionally depend on a server file for value generation.
 
-    The retrieved examples MUST inform the structure and instructional style
-    of the output, but MUST NOT be copied verbatim. The generated solution HTML
-    should be original, readable, and ready for direct use within the
-    platform’s rendering environment.
+    The retrieved reference documents provide **grounding context** and must
+    inform structure and instructional style, but MUST NOT be copied verbatim.
+    The generated solution HTML should be original, readable, and ready for
+    direct use within the platform’s rendering environment.
     """
     question = Question(
         question_text="",
@@ -245,6 +251,7 @@ def generate_solution_html(
         "solution_html": None,
         "retrieved_documents": [],
         "formatted_examples": "",
+        "server_file": server_file,
     }
     result = solution_html_tool.invoke(input_state)
     server = {"solution_html": result.get("solution_html")}

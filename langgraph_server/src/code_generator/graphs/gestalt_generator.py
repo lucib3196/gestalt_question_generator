@@ -1,6 +1,6 @@
 import json
 from pathlib import Path
-from typing import Annotated, Literal, Sequence, TypedDict
+from typing import Annotated, Literal, Sequence, TypedDict, Optional
 
 from langgraph.checkpoint.memory import MemorySaver
 from langgraph.graph import END, START, StateGraph
@@ -32,16 +32,31 @@ config = {"configurable": {"thread_id": "customer_123"}}
 class State(TypedDict):
     question: Question
     metadata: QuestionMetaData | None
-    isAdaptive: bool
+    isAdaptive: Optional[bool]
     # Append any files
     files: Annotated[dict, lambda a, b: {**a, **b}]
 
 
 def classify_question(state: State):
-    input_state: MetadataState = {"question": state["question"], "metadata": None}
+    input_state = MetadataState(
+        **{
+            "question": state["question"],
+            "metadata": None,
+            "isAdaptive": state["isAdaptive"],
+        }
+    )
     result = question_metadata_graph.invoke(input_state, config)  # type: ignore
+    result = MetadataState.model_validate(result)
 
-    return {"metadata": result["metadata"]}
+    metadata = result.metadata
+    assert metadata is not None
+
+    return {
+        "metadata": metadata,
+        "isAdaptive": (
+            metadata.isAdaptive if metadata.isAdaptive is not None else True
+        ),
+    }
 
 
 def generate_question_html(state: State):
@@ -50,7 +65,7 @@ def generate_question_html(state: State):
 
     input_state: QState = {
         "question": state["question"],
-        "isAdaptive": state["isAdaptive"],
+        "isAdaptive": state["isAdaptive"] if state["isAdaptive"] else False,
         "question_html": None,
         "retrieved_documents": [],
         "formatted_examples": "",
@@ -74,10 +89,11 @@ def generate_solution_html(state: State):
 
     input_state: SolutionState = {
         "question": state["question"],
-        "isAdaptive": state["isAdaptive"],
+        "isAdaptive": state["isAdaptive"] if state["isAdaptive"] else False,
         "solution_html": None,
         "retrieved_documents": [],
         "formatted_examples": "",
+        "server_file": None,
     }
 
     result = solution_html_tool.invoke(input_state, config)  # type: ignore
@@ -91,7 +107,7 @@ def generate_server_js(state: State):
 
     input_state: JSState = {
         "question": state["question"],
-        "isAdaptive": state["isAdaptive"],
+        "isAdaptive": state["isAdaptive"] if state["isAdaptive"] else False,
         "server_js": None,
         "retrieved_documents": [],
         "formatted_examples": "",
@@ -108,7 +124,7 @@ def generate_server_py(state: State):
 
     input_state: PyState = {
         "question": state["question"],
-        "isAdaptive": state["isAdaptive"],
+        "isAdaptive": state["isAdaptive"] if state["isAdaptive"] else False,
         "server_py": None,
         "retrieved_documents": [],
         "formatted_examples": "",
@@ -194,16 +210,14 @@ if __name__ == "__main__":
     )
     input_state: State = {
         "question": question,
-        "isAdaptive": True,
+        "isAdaptive": None,
         "metadata": None,
         "files": {},
     }
     result = app.invoke(input_state, config=config)  # type: ignore
 
     # Save output
-    output_path = Path(
-        r"langgraph_server/gestalt_graphs/code_generator/outputs/gestalt_module"
-    )
+    output_path = Path(r"src\code_generator\outputs\gestalt_module").resolve()
     save_graph_visualization(app, output_path, filename="gestalt_generator_graph.png")
     data_path = output_path / "output.json"
     data_path.write_text(json.dumps(to_serializable(result)))

@@ -48,6 +48,7 @@ class State(TypedDict):
     question: Question
     isAdaptive: bool
     solution_html: str | None
+    server_file: str | None
 
     retrieved_documents: Annotated[List[Document], operator.add]
     formatted_examples: str
@@ -57,7 +58,7 @@ def retrieve_examples(state: State) -> Command[Literal["generate_code"]]:
     filter = {
         "isAdaptive": state["isAdaptive"],
         "input_col": "question.html",
-        "output_col": "server.js",
+        "output_col": "solution.html",
         "output_is_nan": False,
     }
     question_html = state["question"].question_html
@@ -94,6 +95,52 @@ def solution_present(state: State) -> Literal["validate_solution", "END"]:
     return "END"
 
 
+def validate_server(state: State):
+    server_file = state["server_file"]
+    if not server_file:
+        return
+
+    input_state: CodeValidationState = {
+        "prompt": f"""
+        You are validating a generated HTML solution file.
+
+        Context:
+        - A server file may be provided. This server file is responsible for
+        generating values, parameters, or logic that the solution HTML depends on.
+        - The solution HTML consumes outputs from the server file but does not
+        reimplement its logic.
+
+        Your task:
+        - Validate that the solution HTML is consistent with the server file’s
+        generated values and intended behavior.
+        - Ensure variable names, identifiers, and references used in the solution
+        HTML match those produced or exposed by the server file.
+        - Verify that the solution logic is coherent, executable, and internally
+        consistent.
+        - Do NOT change the problem statement or pedagogical intent.
+        - Do NOT add new logic that does not exist in the server file or solution.
+
+        Server File:
+        {server_file}
+        """,
+        "generated_code": state["solution_html"] or "",
+        "validation_errors": [],
+        "refinement_count": 0,
+        "final_code": "",
+    }
+
+    result = code_validation_graph.invoke(input_state)  # type: ignore
+    final_code = result["final_code"]
+
+    return {"solution_html": final_code}
+
+
+def server_present(state: State) -> Literal["validate_server", "END"]:
+    if state["server_file"]:
+        return "validate_server"
+    return "END"
+
+
 def validate_solution(state: State):
     solution_guide = state["question"].solution_guide
 
@@ -120,6 +167,7 @@ workflow = StateGraph(State)
 workflow.add_node("retrieve_examples", retrieve_examples)
 workflow.add_node("generate_code", generate_code)
 workflow.add_node("validate_solution", validate_solution)
+workflow.add_node("validate_server", validate_server)
 # Connect
 workflow.add_edge(START, "retrieve_examples")
 workflow.add_conditional_edges(
@@ -127,7 +175,13 @@ workflow.add_conditional_edges(
     solution_present,
     {"END": END, "validate_solution": "validate_solution"},
 )
+workflow.add_conditional_edges(
+    "validate_solution",
+    server_present,
+    {"END": END, "validate_server": "validate_server"},
+)
 workflow.add_edge("validate_solution", END)
+workflow.add_edge("validate_server", END)
 workflow.add_edge("retrieve_examples", END)
 
 # memory = MemorySaver()
@@ -147,6 +201,7 @@ if __name__ == "__main__":
         "solution_html": None,
         "retrieved_documents": [],
         "formatted_examples": "",
+        "server_file": None,
     }
     result = app.invoke(input_state, config=config)  # type: ignore
     print(result["solution_html"])
