@@ -1,0 +1,3 @@
+[submodule "gestalt_question_generator_streamlit"]
+	path = gestalt_question_generator_streamlit
+	url = https://github.com/lucib3196/gestalt_question_generator_streamlit.git
