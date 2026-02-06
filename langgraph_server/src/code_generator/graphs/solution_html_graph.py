@@ -148,11 +148,11 @@ def validate_solution(state: State):
         "prompt": f"""You are tasked with analyzing the following HTML file 
             "containing a solution guide. Verify that the solution guide 
             "HTML correctly follows the provided solution.
-            "Solution Guide {solution_guide } """,
-        "generated_code": state["solution_html"] or "",
+            "Solution Guide {solution_guide }\n Original Code {state["solution_html"]} """,
         "validation_errors": [],
         "refinement_count": 0,
-        "final_code": "",
+        "generated_code": state["solution_html"],
+        "final_code": None,
     }
 
     # Run the code validation refinement graph
@@ -167,7 +167,7 @@ workflow = StateGraph(State)
 workflow.add_node("retrieve_examples", retrieve_examples)
 workflow.add_node("generate_code", generate_code)
 workflow.add_node("validate_solution", validate_solution)
-workflow.add_node("validate_server", validate_server)
+# workflow.add_node("validate_server", validate_server)
 # Connect
 workflow.add_edge(START, "retrieve_examples")
 workflow.add_conditional_edges(
@@ -175,13 +175,13 @@ workflow.add_conditional_edges(
     solution_present,
     {"END": END, "validate_solution": "validate_solution"},
 )
-workflow.add_conditional_edges(
-    "validate_solution",
-    server_present,
-    {"END": END, "validate_server": "validate_server"},
-)
+# workflow.add_conditional_edges(
+#     "validate_solution",
+#     server_present,
+#     {"END": END, "validate_server": "validate_server"},
+# )
 workflow.add_edge("validate_solution", END)
-workflow.add_edge("validate_server", END)
+# workflow.add_edge("validate_server", END)
 workflow.add_edge("retrieve_examples", END)
 
 # memory = MemorySaver()

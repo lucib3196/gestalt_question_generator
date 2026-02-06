@@ -23,7 +23,7 @@ model = init_chat_model(
 
 class State(TypedDict):
     prompt: str
-    generated_code: str
+    generated_code: str | None 
     validation_errors: Annotated[List[str], add]
     # Amount of times going through generation
     refinement_count: int
@@ -38,7 +38,27 @@ def generate_code(state: State) -> Command[Literal["validate_code"]]:
         errors = "\n".join(state["validation_errors"])
         refinement_context = f"\nFix these issues:\n{errors}"
 
-    prompt = f"{state['prompt']}{refinement_context} Code to be fixed: {state['generated_code']}"
+    prompt = f"""
+        You are given existing source code that needs refinement.
+
+        Your task is to MODIFY the provided code while:
+        - Preserving the original structure, control flow, and intent
+        - Making minimal but meaningful improvements
+        - Fixing bugs, edge cases, and incorrect logic
+        - Improving readability, naming, and safety where appropriate
+        - NOT rewriting the code from scratch unless absolutely necessary
+
+        Use the refinement context as guidance for what to improve.
+
+        Return ONLY the improved version of the code.
+        Do NOT include explanations, comments about changes, or markdown fences.
+
+        Refinement context:
+        {refinement_context}
+
+        Code to be refined:
+        {state['generated_code']}
+        """
 
     # Generate with structured output
     structured_model = model.with_structured_output(CodeResponse)
