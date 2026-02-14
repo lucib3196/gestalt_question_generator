@@ -7,7 +7,7 @@ from langgraph.graph import END, START, StateGraph
 
 from src.models import Question
 from src.utils import save_graph_visualization, to_serializable
-
+from pydantic import BaseModel
 from .question_metadata_graph import QuestionMetaData
 from . import (
     JSState,
@@ -202,6 +202,7 @@ graph.add_edge("generate_info_json", END)
 app = graph.compile()
 if __name__ == "__main__":
     config = {"configurable": {"thread_id": "customer_123"}}
+    
     question = Question(
         question_text="A car is traveling along a straight rode at a constant speed of 100mph for 5 hours calculate the total distance traveled",
         solution_guide=None,
@@ -221,3 +222,5 @@ if __name__ == "__main__":
     save_graph_visualization(app, output_path, filename="gestalt_generator_graph.png")
     data_path = output_path / "output.json"
     data_path.write_text(json.dumps(to_serializable(result)))
+
+
