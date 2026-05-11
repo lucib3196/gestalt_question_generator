@@ -1,51 +1,22 @@
 import json
 import operator
-import os
 from pathlib import Path
 from typing import Annotated, List, Literal, TypedDict
 
-from langchain_astradb import AstraDBVectorStore
-from langchain.chat_models import init_chat_model
 from langchain_core.documents import Document
-from langchain_core.prompts import ChatPromptTemplate
-from langchain_openai import OpenAIEmbeddings
 from langgraph.graph import END, START, StateGraph
 from langgraph.types import Command
 
-from src.code_validation import CodeValidationState, code_validation_graph
-from src.models import CodeResponse, Question
-from src.utils import (
-    extract_langsmith_prompt,
+from src.code_generator.graphs import (
+    model,
+    resolve_prompt,
+    vector_store,
     save_graph_visualization,
     to_serializable,
+    CodeValidationState,
+    code_validation_graph,
 )
-
-
-# --- External Services ---
-from langsmith import Client
-
-model = init_chat_model(
-    model="gpt-4o",
-    model_provider="openai",
-)
-embeddings = OpenAIEmbeddings(
-    model=os.getenv("EMBEDDINGS", ""),
-)
-
-vector_store = AstraDBVectorStore(
-    collection_name="gestalt_module",
-    embedding=embeddings,
-    api_endpoint=os.getenv("ASTRA_DB_API_ENDPOINT", None),
-    token=os.getenv("ASTRA_DB_APPLICATION_TOKEN", None),
-    namespace=os.getenv("ASTRA_DB_KEYSPACE", None),
-)
-
-client = Client()
-base_prompt = client.pull_prompt("server_py_graph_prompt")
-if isinstance(base_prompt, str):
-    prompt: ChatPromptTemplate = ChatPromptTemplate.from_template(base_prompt)
-else:
-    prompt: ChatPromptTemplate = base_prompt
+from src.models import CodeResponse, Question
 
 
 class State(TypedDict):
@@ -58,7 +29,6 @@ class State(TypedDict):
 
 
 def retrieve_examples(state: State) -> Command[Literal["generate_code"]]:
-
     question_html = state["question"].question_html
     if not question_html:
         question_html = state["question"].question_text
@@ -70,7 +40,6 @@ def retrieve_examples(state: State) -> Command[Literal["generate_code"]]:
         "output_is_nan": False,
     }
     results = vector_store.similarity_search(question_html, k=2, filter=filter)
-    # Format docs
     formatted_docs = "\n".join(p.page_content for p in results)
     return Command(
         update={"formatted_examples": formatted_docs, "retrieved_documents": results},
@@ -86,12 +55,13 @@ def generate_code(state: State):
     if not question_html:
         question_html = state["question"].question_text
 
-    messages = prompt.format_prompt(
-        question=question_html, examples=examples, solution=solution
-    ).to_messages()
+    prompt = resolve_prompt("server_py_graph_prompt")
+    prompt += (
+        f"""question html {question_html} examples: {examples} solution: {solution}"""
+    )
 
     structured_model = model.with_structured_output(CodeResponse)
-    server = structured_model.invoke(messages)
+    server = structured_model.invoke(prompt)
     server = CodeResponse.model_validate(server)
     return {"server_py": server.code}
 
@@ -118,9 +88,7 @@ def validate_solution(state: State):
         "final_code": "",
     }
 
-    # Run the code validation refinement graph
     result = code_validation_graph.invoke(input_state)  # type: ignore
-
     final_code = result["final_code"]
 
     return {"server_py": final_code}
@@ -136,7 +104,7 @@ def improve_code(state: State):
             "Carefully analyze the logic, verify alignment with the solution "
             "guide, and update the code to properly account for variable units, "
             "scaling factors, or engineering constants that may be required.\n\n"
-            f"General Guidelines for Server File Guide:\n{extract_langsmith_prompt(base_prompt)}"
+            f"General Guidelines for Server File Guide:\n{resolve_prompt('server_py_graph_prompt')}"
         ),
         "generated_code": state.get("server_py", "") or "",
         "validation_errors": [],
@@ -144,22 +112,18 @@ def improve_code(state: State):
         "final_code": "",
     }
 
-    # Execute the refinement / validation graph
     result = code_validation_graph.invoke(input_state)  # type: ignore
-
     final_code = result["final_code"]
 
     return {"server_py": final_code}
 
 
 workflow = StateGraph(State)
-# Define Nodes
 workflow.add_node("retrieve_examples", retrieve_examples)
 workflow.add_node("generate_code", generate_code)
 workflow.add_node("validate_solution", validate_solution)
 workflow.add_node("improve_code", improve_code)
-# Connect
-# Connect
+
 workflow.add_edge(START, "retrieve_examples")
 workflow.add_conditional_edges(
     "generate_code",
@@ -170,10 +134,8 @@ workflow.add_edge("validate_solution", "improve_code")
 workflow.add_edge("improve_code", END)
 workflow.add_edge("retrieve_examples", END)
 
-
-# memory = MemorySaver()
-# app = workflow.compile(checkpointer=memory)
 app = workflow.compile()
+
 if __name__ == "__main__":
     config = {"configurable": {"thread_id": "customer_123"}}
     question = Question(
@@ -192,10 +154,7 @@ if __name__ == "__main__":
     result = app.invoke(input_state, config=config)  # type: ignore
     print(result["server_py"])
 
-    # Save output
-    output_path = Path(
-        r"langgraph_server/gestalt_graphs/code_generator/outputs/server_py"
-    )
+    output_path = Path(r"src/code_generator/outputs/server_py")
     save_graph_visualization(app, output_path, filename="graph.png")
     data_path = output_path / "output.json"
     data_path.write_text(json.dumps(to_serializable(result)))

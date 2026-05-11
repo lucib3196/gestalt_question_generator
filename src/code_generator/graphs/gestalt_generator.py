@@ -25,9 +25,6 @@ from src.code_generator.graphs.question_metadata_graph import (
 )
 
 
-memory = MemorySaver()
-config = {"configurable": {"thread_id": "customer_123"}}
-
 
 class State(TypedDict):
     question: Question

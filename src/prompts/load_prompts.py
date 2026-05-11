@@ -13,7 +13,13 @@ from src.core.logger import logger
 load_dotenv()
 client = Client()
 settings = get_settings()
-VALID_PROMPTS = ["question_html_prompt"]
+VALID_PROMPTS = [
+    "question_html_graph_prompt",
+    "question_metadata",
+    "server_js_graph_prompt",
+    "server_py_graph_prompt",
+    "solution_html_graph_prompt",
+]
 
 BASE_PATH = Path("./src/prompts")
 

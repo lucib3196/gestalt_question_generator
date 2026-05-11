@@ -3,27 +3,19 @@ from operator import add
 from pathlib import Path
 from typing import Annotated, List, Literal, TypedDict
 
-from langchain.chat_models import init_chat_model
 from langgraph.graph import END, START, StateGraph
 from langgraph.types import Command
-
+from src.models import CodeResponse, ValidationResult
 from . import (
-    CodeResponse,
-    ValidationResult,
+    model,
     save_graph_visualization,
     to_serializable,
 )
 
 
-model = init_chat_model(
-    model="gpt-4o",
-    model_provider="openai",
-)
-
-
 class State(TypedDict):
     prompt: str
-    generated_code: str | None 
+    generated_code: str | None
     validation_errors: Annotated[List[str], add]
     # Amount of times going through generation
     refinement_count: int

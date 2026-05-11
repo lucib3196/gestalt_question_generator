@@ -70,7 +70,7 @@ class QuestionModuleDocumentLoader(BaseLoader):
 
 if __name__ == "__main__":
     csv_path = Path(
-        r"langgraph_server/src/code_generator/data/QuestionDataV2_06122025_classified.csv"
+        r"src/code_generator/data/QuestionDataV2_06122025_classified.csv"
     ).resolve()
     loader = QuestionModuleDocumentLoader(
         file_path=csv_path, input_col="question", output_col="server.js"
