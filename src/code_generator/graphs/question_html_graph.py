@@ -23,14 +23,9 @@ from src.utils import save_graph_visualization, to_serializable
 from langsmith import Client
 
 
-model = init_chat_model(
-    model="gpt-4o",
-    model_provider="openai",
-)
+from . import model
 
-embeddings = OpenAIEmbeddings(
-    model=os.getenv("EMBEDDINGS", ""),
-)
+
 
 vector_store = AstraDBVectorStore(
     collection_name="gestalt_module",

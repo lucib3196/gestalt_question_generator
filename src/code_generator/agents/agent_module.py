@@ -1,9 +1,8 @@
 from langchain.agents import create_agent
 from langchain_core.tools import tool
-from src.code_generator.graphs import gestalt_generator, GestaltState
-from src.code_generator.prompts import GESTALT_EDUCATOR_AGENT_PROMPT
-from src.ai_tools import prepare_zip
+from src.ai_tools.file_tools import prepare_zip
 from src.models import Question
+from src.code_generator.agents import model, gestalt_generator, GestaltState
 
 
 @tool
@@ -110,8 +109,8 @@ def generate_gestalt_module(
 
 
 agent = create_agent(
-    model="gpt-4o",
+    model=model,
     # checkpointer=InMemorySaver(),
     tools=[generate_gestalt_module, prepare_zip],
-    system_prompt=GESTALT_EDUCATOR_AGENT_PROMPT,
+    system_prompt="",
 )

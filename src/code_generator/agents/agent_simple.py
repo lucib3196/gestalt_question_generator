@@ -1,5 +1,6 @@
 # --- Standard Library ---
 from typing import List, Optional
+from src.models import Question
 
 # --- LangChain / LangGraph ---
 from langchain.agents import create_agent
@@ -7,7 +8,7 @@ from langchain.chat_models import init_chat_model
 from langchain_core.documents import Document
 from langchain_core.tools import tool
 from src.ai_tools import prepare_zip
-from src.code_generator.graphs import (
+from src.code_generator.agents import (
     question_html_tool,
     QState,
     server_js_tool,
@@ -16,13 +17,7 @@ from src.code_generator.graphs import (
     SolutionState,
     server_py_generator,
     PyState,
-)
-from src.models import Question
-from src.code_generator.prompts import GESTALT_AGENT
-
-model = init_chat_model(
-    model="gpt-4o",
-    model_provider="openai",
+    model,
 )
 
 
@@ -270,5 +265,5 @@ tools = [
 agent = create_agent(
     model,
     tools=tools,
-    system_prompt=GESTALT_AGENT,
+    system_prompt="",
 )

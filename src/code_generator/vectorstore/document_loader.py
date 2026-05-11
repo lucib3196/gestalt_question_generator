@@ -12,7 +12,7 @@ class QuestionModuleDocumentLoader(BaseLoader):
         output_col: str,
         file_path: (
             str | Path
-        ) = r"langgraph_server/src/code_generator/data/QuestionDataV2_06122025_classified.csv",
+        ) = r"src/code_generator/data/QuestionDataV2_06122025_classified.csv",
     ):
         self.file_path = Path(file_path).resolve()
         if not self.file_path.exists():

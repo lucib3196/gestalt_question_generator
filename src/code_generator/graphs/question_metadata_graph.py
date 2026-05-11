@@ -1,30 +1,19 @@
 import json
 from pathlib import Path
-from typing import List, TypedDict
+from typing import List
 from pydantic import BaseModel, Field
-from langchain.chat_models import init_chat_model
 from langchain_core.prompts import ChatPromptTemplate
 from langgraph.graph import END, START, StateGraph
 from pydantic import Field
 from src.models import Question, QuestionTypes
 from src.utils import save_graph_visualization, to_serializable
-
-
-# --- External Services ---
 from langsmith import Client
 
-model = init_chat_model(
-    model="gpt-4o",
-    model_provider="openai",
-)
-
+from . import model, resolve_prompt
 
 client = Client()
-base_prompt = client.pull_prompt("base_metadata")
-if isinstance(base_prompt, str):
-    prompt: ChatPromptTemplate = ChatPromptTemplate.from_template(base_prompt)
-else:
-    prompt: ChatPromptTemplate = base_prompt
+
+base_prompt = ChatPromptTemplate.from_template(resolve_prompt("base_metadata"))
 
 
 class QuestionMetaData(BaseModel):
