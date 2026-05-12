@@ -1,29 +1,36 @@
 import json
 from pathlib import Path
+
 from typing import Annotated, Literal, Sequence, TypedDict, Optional
 
-from langgraph.checkpoint.memory import MemorySaver
 from langgraph.graph import END, START, StateGraph
 
 from src.models import Question
 from src.utils import save_graph_visualization, to_serializable
-from pydantic import BaseModel
-from .question_metadata_graph import QuestionMetaData
-from . import (
-    JSState,
-    PyState,
-    QState,
-    SolutionState,
-    question_html_tool,
-    server_js_tool,
-    server_py_generator,
-    solution_html_tool,
-)
+
+from src.code_generator.graphs.question_metadata_graph import QuestionMetaData
+
+
 from src.code_generator.graphs.question_metadata_graph import (
     app as question_metadata_graph,
     State as MetadataState,
 )
-
+from src.code_generator.graphs.question_html_graph import (
+    app as question_html_tool,
+    State as QState,
+)
+from src.code_generator.graphs.server_js_graph import (
+    app as server_js_tool,
+    State as JSState,
+)
+from src.code_generator.graphs.server_py_graph import (
+    app as server_py_generator,
+    State as PyState,
+)
+from src.code_generator.graphs.solution_html_graph import (
+    app as solution_html_tool,
+    State as SolutionState,
+)
 
 
 class State(TypedDict):
@@ -199,7 +206,7 @@ graph.add_edge("generate_info_json", END)
 app = graph.compile()
 if __name__ == "__main__":
     config = {"configurable": {"thread_id": "customer_123"}}
-    
+
     question = Question(
         question_text="A car is traveling along a straight rode at a constant speed of 100mph for 5 hours calculate the total distance traveled",
         solution_guide=None,
@@ -215,9 +222,7 @@ if __name__ == "__main__":
     result = app.invoke(input_state, config=config)  # type: ignore
 
     # Save output
-    output_path = Path(r"src\code_generator\outputs\gestalt_module").resolve()
+    output_path = Path(r"src/code_generator/outputs/gestalt_module").resolve()
     save_graph_visualization(app, output_path, filename="gestalt_generator_graph.png")
     data_path = output_path / "output.json"
     data_path.write_text(json.dumps(to_serializable(result)))
-
-
