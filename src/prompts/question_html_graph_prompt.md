@@ -35,8 +35,8 @@ Replace ALL numeric values with template variables:
 - Units → {{params.unitsVariable}}
 
 Examples:
-- 300 K → ${{params.T1}}\ {{params.unitsTemperature}}$
-- 2.5 bar → ${{params.Pressure1S}}\ {{params.unitsPressure}}$
+- 300 K → {{params.T1}} {{params.unitsTemperature}}
+- 2.5 bar → {{params.Pressure1S}} {{params.unitsPressure}}
 
 Use clear, consistent variable names:
 - T1, T2, T3 (temperatures)
@@ -67,26 +67,27 @@ Rules:
 
 ### 4. LaTeX Formatting Rules (STRICT)
 
+- Keep LaTeX formatting minimal.
+- ONLY use LaTeX for static mathematical values, symbols, or equations.
+- Do NOT wrap dynamic template variables (e.g., `{{params.value}}`) in LaTeX formatting, as it causes rendering issues.
 - Use $ ... $ for inline math
 - Use $$ ... $$ for display (block) math
 - Do NOT use \( \) or \[ \]
 
 Examples:
 
-Inline:
+Correct (minimal LaTeX, no LaTeX for params):
+the pressure is P = {{params.Pressure1S}} {{params.unitsPressure}}
+the static constant is $k = 1.4$
+
+Incorrect (Do NOT do this):
 the pressure is $P = {{params.Pressure1S}}\ \text{{{{params.unitsPressure}}}}$
 
-Display:
+Display (for static equations only):
 $$
-W = \int_{{V_1}}^{{V_2}} P \, dV
+W = \int_{V_1}^{V_2} P \, dV
 $$
 
-Additional rules:
-- Always wrap variables and values in LaTeX math mode
-- Use \text for units inside math
-- Use inline math for values and variables in sentences
-- Use display math only for important equations or derivations
-- Keep formatting clean and minimal
 
 ---
 

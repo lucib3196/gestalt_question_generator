@@ -1,13 +1,11 @@
 # --- Standard Library ---
 from typing import List, Optional
 from src.models import Question
+from pathlib import Path
 
-# --- LangChain / LangGraph ---
 from langchain.agents import create_agent
-from langchain.chat_models import init_chat_model
 from langchain_core.documents import Document
 from langchain_core.tools import tool
-from src.ai_tools import prepare_zip
 from src.code_generator.agents import (
     question_html_tool,
     QState,
@@ -19,6 +17,170 @@ from src.code_generator.agents import (
     PyState,
     model,
 )
+from pydantic import BaseModel, Field
+from src.code_generator.graphs.question_metadata_graph import (
+    QuestionMetaData,
+    State as MetaInput,
+    app as generate_metadata,
+)
+from pathlib import Path
+
+import re
+import html
+from typing import Optional
+
+
+def safe_string_cleanup(
+    text: Optional[str],
+    *,
+    remove_markdown_fences: bool = True,
+    normalize_newlines: bool = True,
+    unescape_html_entities: bool = True,
+    collapse_excess_newlines: bool = True,
+    strip_trailing_whitespace: bool = True,
+    strip_surrounding_whitespace: bool = True,
+) -> str:
+    """
+    General-purpose safe cleanup utility for LLM-generated strings.
+
+    Designed to safely normalize common formatting artifacts WITHOUT
+    aggressively modifying meaningful content such as:
+    - LaTeX
+    - template braces
+    - escaped math expressions
+    - custom HTML tags
+
+    Safe operations include:
+    - newline normalization
+    - markdown fence removal
+    - whitespace cleanup
+    - HTML entity unescaping
+    - excess blank line collapsing
+
+    Parameters
+    ----------
+    text : Optional[str]
+        Input text to normalize.
+
+    remove_markdown_fences : bool
+        Removes surrounding markdown code fences such as ```html.
+
+    normalize_newlines : bool
+        Normalizes \\r\\n and escaped \\n values.
+
+    unescape_html_entities : bool
+        Converts entities like &lt; into <.
+
+    collapse_excess_newlines : bool
+        Reduces excessive blank lines.
+
+    strip_trailing_whitespace : bool
+        Removes trailing spaces from each line.
+
+    strip_surrounding_whitespace : bool
+        Strips leading/trailing whitespace from entire document.
+
+    Returns
+    -------
+    str
+        Cleaned string.
+    """
+
+    if text is None:
+        return ""
+
+    # Ensure string
+    text = str(text)
+
+    # HTML entity cleanup
+    if unescape_html_entities:
+        text = html.unescape(text)
+
+    # Normalize line endings
+    if normalize_newlines:
+
+        # Windows -> Unix
+        text = text.replace("\r\n", "\n")
+
+        # Old Mac -> Unix
+        text = text.replace("\r", "\n")
+
+        # Escaped newlines -> actual newlines
+        text = text.replace("\\n", "\n")
+
+        # Escaped tabs
+        text = text.replace("\\t", "\t")
+
+    # Remove markdown fences
+    if remove_markdown_fences:
+
+        text = re.sub(
+            r"^\s*```[a-zA-Z0-9_-]*\s*\n",
+            "",
+            text,
+        )
+
+        text = re.sub(
+            r"\n\s*```\s*$",
+            "",
+            text,
+        )
+
+    # Collapse excessive blank lines
+    if collapse_excess_newlines:
+        text = re.sub(r"\n{3,}", "\n\n", text)
+
+    # Remove trailing whitespace per line
+    if strip_trailing_whitespace:
+        text = "\n".join(line.rstrip() for line in text.splitlines())
+
+    # Final strip
+    if strip_surrounding_whitespace:
+        text = text.strip()
+
+    return text
+
+
+def cleanup_file_content(filename: str, content: str) -> str:
+
+    suffix = Path(filename).suffix
+
+    if suffix == ".html":
+        return safe_string_cleanup(
+            content,
+            unescape_html_entities=False,
+        )
+
+    elif suffix in [".js", ".ts"]:
+        return safe_string_cleanup(
+            content,
+            normalize_newlines=False,
+        )
+
+    elif suffix == ".py":
+        return safe_string_cleanup(content)
+
+    return content
+
+
+class File(BaseModel):
+    filename: str = Field(..., description="The file name")
+    content: str = Field(..., description="The actual text content of the file.")
+    extension: str = Field(..., description="The file extension (e.g., '.js', '.py').")
+
+
+class FinalQuestionPayload(BaseModel):
+    """Final payload containing metadata and generated files for persistence."""
+
+    metadata: QuestionMetaData = Field(
+        ...,
+        description="Canonical question metadata produced by generate_question_metadata.",
+    )
+    files: List[File] = []
+
+
+class ImageResponse(BaseModel):
+    url: str
 
 
 @tool
@@ -185,6 +347,33 @@ def generate_server_py(
 
 
 @tool
+def generate_question_metadata(
+    question_text: str,
+    question_html: Optional[str],
+    isAdaptive: bool,
+):
+    """
+    Build canonical question metadata used by the final packaging step.
+
+    Call this after question generation and before building the final payload so
+    metadata is normalized to platform schema expectations. If `question_html`
+    is missing, it is treated as an empty string.
+    """
+    if not question_html:
+        question_html = ""
+    question = Question(
+        question_text=question_text,
+        solution_guide=None,
+        question_html=question_html,
+        final_answer=None,
+    )
+    result = generate_metadata.invoke(
+        MetaInput(question=question, isAdaptive=isAdaptive)
+    )
+    return result.get("metadata", None)
+
+
+@tool
 def generate_solution_html(
     question_html: str,
     solution_guide: Optional[str] = None,
@@ -254,16 +443,45 @@ def generate_solution_html(
     return server, retrieved_context
 
 
+@tool
+def final_question_payload(metadata: QuestionMetaData, files: List[File]):
+    """
+    Create the final question payload for storage.
+
+    Use this as the LAST tool call when the educator is ready to finalize.
+    Requirements:
+    - Metadata must be generated via `generate_question_metadata`.
+    - At least one generated file must be included.
+    - File names must use proper extensions that match file contents
+      (for example, use `server.js`, not `server_js`).
+
+      Since this is the final payload message do not show the files or metadata directly unless specirfically mentioned this is meant to keep the chat messages complete.
+      On the frontend of our application we are allowing users to accepts and persist the question just mention that the initial generation is complete and now the user should be able to save the
+      generated content on approval.
+
+    """
+    payload = FinalQuestionPayload(metadata=metadata, files=files)
+    return payload.model_dump()
+
+
 tools = [
     generate_question_html,
-    prepare_zip,
     generate_server_js,
     generate_solution_html,
     generate_server_py,
+    generate_question_metadata,
+    final_question_payload,
+    # generate_image,
 ]
+system_prompt = Path(r"src/prompts/gestalt_educator_agent_prompt.md").read_text()
+
+system_prompt += """You can also generate images. Available Tools. """
+
+for t in tools:
+    system_prompt += str(t.__doc__)
 
 agent = create_agent(
     model,
     tools=tools,
-    system_prompt="",
+    system_prompt=system_prompt,
 )

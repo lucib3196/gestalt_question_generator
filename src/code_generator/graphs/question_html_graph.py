@@ -3,25 +3,16 @@ import operator
 from pathlib import Path
 from typing import Annotated, List, Literal, TypedDict
 from langchain_core.documents import Document
-from langchain_core.prompts import ChatPromptTemplate
 from langgraph.graph import END, START, StateGraph
 from langgraph.types import Command
 from src.models import Question, CodeResponse
-
 
 from . import (
     model,
     resolve_prompt,
     vector_store,
-    save_graph_visualization,
     to_serializable,
 )
-
-prompt: ChatPromptTemplate = ChatPromptTemplate.from_template(
-    resolve_prompt("question_html_graph_prompt")
-)
-
-
 class State(TypedDict):
     question: Question
     isAdaptive: bool
@@ -57,12 +48,14 @@ def retrieve_examples(state: State) -> Command[Literal["generate_code"]]:
 def generate_code(state: State):
     question_text = state["question"].question_text
     examples = state["formatted_examples"]
-    messages = prompt.format_prompt(
-        question=question_text, examples=examples
-    ).to_messages()
+    prompt = resolve_prompt("question_html_graph_prompt")
+    prompt += f"""
+    question : {question_text}
+    examples: {examples}
+    """
 
     structured_model = model.with_structured_output(CodeResponse)
-    question_html = structured_model.invoke(messages)
+    question_html = structured_model.invoke(prompt)
     question_html = CodeResponse.model_validate(question_html)
     return {"question_html": question_html.code}
 

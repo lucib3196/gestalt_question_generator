@@ -18,7 +18,7 @@ from src.code_generator.graphs.server_py_graph import (
     State as PyState,
 )
 
-from src.code_generator.graphs.gestalt_generator import (
+from src.code_generator.generator.gestalt_generator import (
     app as gestalt_generator,
     State as GestaltState,
 )
@@ -27,5 +27,9 @@ settings = get_settings()
 
 model = init_chat_model(
     model=settings.model,
+    model_provider="google_genai",
+)
+image_generation_model = init_chat_model(
+    model="gemini-3.1-flash-image-preview",
     model_provider="google_genai",
 )

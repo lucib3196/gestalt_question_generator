@@ -68,79 +68,15 @@ def generate_code(state: State):
     return {"server_js": server.code}
 
 
-def solution_present(state: State) -> Literal["validate_solution", "improve_code"]:
-    if state["question"].solution_guide:
-        return "validate_solution"
-    return "improve_code"
-
-
-def validate_solution(state: State):
-    solution_guide = state["question"].solution_guide
-
-    input_state: CodeValidationState = {
-        "prompt": (
-            "You are tasked with analyzing the following Javascript server file. "
-            "Verify that the generated code is valid, consistent, and follows "
-            "the logic described in the provided solution guide.\n\n"
-            f"Solution Guide:\n{solution_guide}"
-        ),
-        "generated_code": state["server_js"] or "",
-        "validation_errors": [],
-        "refinement_count": 0,
-        "final_code": "",
-    }
-
-    # Run the code validation refinement graph
-    result = code_validation_graph.invoke(input_state)  # type: ignore
-
-    final_code = result["final_code"]
-
-    return {"server_js": final_code}
-
-
-def improve_code(state: State):
-    input_state: CodeValidationState = {
-        "prompt": (
-            "You are tasked with reviewing and improving the following Python "
-            "server file. Your goal is to ensure that the code is correct, "
-            "numerically consistent, and integrates dynamic unit handling "
-            "based on the problem statement.\n\n"
-            "Carefully analyze the logic, verify alignment with the solution "
-            "guide, and update the code to properly account for variable units, "
-            "scaling factors, or engineering constants that may be required.\n\n"
-            f"General Guidelines for Server File Guide:\n{resolve_prompt("server_js_graph_prompt")}"
-        ),
-        "generated_code": state.get("server_js", "") or "",
-        "validation_errors": [],
-        "refinement_count": 0,
-        "final_code": "",
-    }
-
-    # Execute the refinement / validation graph
-    result = code_validation_graph.invoke(input_state)  # type: ignore
-
-    final_code = result["final_code"]
-
-    return {"server_js": final_code}
-
-
 workflow = StateGraph(State)
 # Define Nodes
 workflow.add_node("retrieve_examples", retrieve_examples)
 workflow.add_node("generate_code", generate_code)
-workflow.add_node("validate_solution", validate_solution)
-workflow.add_node("improve_code", improve_code)
+
 # Connect
 # Connect
 workflow.add_edge(START, "retrieve_examples")
-workflow.add_conditional_edges(
-    "generate_code",
-    solution_present,
-    {"improve_code": "improve_code", "validate_solution": "validate_solution"},
-)
-workflow.add_edge("validate_solution", "improve_code")
-workflow.add_edge("improve_code", END)
-workflow.add_edge("retrieve_examples", END)
+workflow.add_edge("generate_code", END)
 
 
 # memory = MemorySaver()

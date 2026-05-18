@@ -44,8 +44,8 @@ Replace ALL numeric values with template variables:
 - Units → \{\{params.unitsVariable\}\}
 
 Examples:
-- $T = \{\{params.T1\}\} \\ \text{\{\{params.unitsTemperature\}\}}$
-- Final answer: $W = \{\{correct_answers.Work\}\} \\ \text{\{\{params.unitsSpecificEnthalpy\}\}}$
+- T = {{params.T1}} {{params.unitsTemperature}}
+- Final answer: W = {{correct_answers.Work}} {{params.unitsSpecificEnthalpy}}
 
 Use consistent variable names:
 - T1, T2, T3  
@@ -66,23 +66,27 @@ Each <pl-hint> should:
 
 ### 4. LaTeX Formatting Rules (STRICT)
 
+- Keep LaTeX formatting minimal.
+- ONLY use LaTeX for static mathematical values, symbols, or equations.
+- Do NOT wrap dynamic template variables (e.g., `{{params.value}}` or `{{correct_answers.value}}`) in LaTeX formatting, as it causes rendering issues.
 - Use $ ... $ for inline math  
 - Use $$ ... $$ for display math  
 - Do NOT use \( \) or \[ \]  
 
 Examples:
 
-Inline:
-$P = \{\{params.Pressure1S\}\} \\ \text{\{\{params.unitsPressure\}\}}$
+Correct (minimal LaTeX, no LaTeX for params):
+P = {{params.Pressure1S}} {{params.unitsPressure}}
+the static constant is $k = 1.4$
 
-Display:
+Display (for static equations only):
 $$
-W = \\int_{\{V_1\}}^{\{V_2\}} P \\, dV
+W = \int_{V_1}^{V_2} P \, dV
 $$
 
 Additional rules:
-- Always wrap variables and values in LaTeX math mode  
-- Use display math for key equations and final expressions  
+- Never wrap variables like {{params.*}} or {{correct_answers.*}} in LaTeX math mode  
+- Use display math for key static equations and derivations  
 - Keep formatting clean and minimal  
 
 ---
@@ -132,7 +136,7 @@ $$
 <pl-hint>
   <p><strong>step 1: identify known values</strong></p>
   <p>
-    the initial temperature is $\{\{params.T1\}\} \\ \text{\{\{params.unitsTemperature\}\}}$ and the pressure is $\{\{params.Pressure1S\}\} \\ \text{\{\{params.unitsPressure\}\}}$.
+    the initial temperature is {{params.T1}} {{params.unitsTemperature}} and the pressure is {{params.Pressure1S}} {{params.unitsPressure}}.
   </p>
 </pl-hint>
 
@@ -145,14 +149,14 @@ $$
 
 <pl-hint>
   <p><strong>step 3: substitute values</strong></p>
-  $$
-  W = (\{\{params.cp\}\})( \{\{params.T3\}\} - \{\{params.T1\}\} )
-  $$
+  <p>
+  W = ({{params.cp}})( {{params.T3}} - {{params.T1}} )
+  </p>
 </pl-hint>
 
 <pl-hint>
   <p><strong>step 4: final answer</strong></p>
-  $$
-  W = \{\{correct_answers.Work\}\} \\ \text{\{\{params.unitsSpecificEnthalpy\}\}}
-  $$
+  <p>
+  W = {{correct_answers.Work}} {{params.unitsSpecificEnthalpy}}
+  </p>
 </pl-hint>

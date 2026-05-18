@@ -5,17 +5,17 @@ from pydantic import BaseModel, Field
 from langgraph.graph import END, START, StateGraph
 from pydantic import Field
 from src.models import Question, QuestionTypes
-from . import (
+from src.code_generator.graphs import (
     model,
     resolve_prompt,
-    save_graph_visualization,
     to_serializable,
+    save_graph_visualization,
 )
 
 
 class QuestionMetaData(BaseModel):
     title: str = Field(..., description="A concise title summarizing the question")
-    question_types: List[QuestionTypes] = []
+    qTypes: List[QuestionTypes] = []
     topics: List[str] = Field(
         default=[],
         description="A list of comma seperated values for the topics that represents the question properly",

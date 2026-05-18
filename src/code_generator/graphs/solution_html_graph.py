@@ -67,72 +67,14 @@ def generate_code(state: State):
     return {"solution_html": solution_html.code}
 
 
-def solution_present(state: State) -> Literal["validate_solution", "improve_code"]:
-    if state["question"].solution_guide:
-        return "validate_solution"
-    return "improve_code"
-
-
-def validate_solution(state: State):
-    solution_guide = state["question"].solution_guide
-
-    input_state: CodeValidationState = {
-        "prompt": (
-            "You are tasked with analyzing the following HTML solution file. "
-            "Verify that the generated HTML is valid, consistent, and follows "
-            "the logic described in the provided solution guide.\n\n"
-            f"Solution Guide:\n{solution_guide}"
-        ),
-        "generated_code": state["solution_html"] or "",
-        "validation_errors": [],
-        "refinement_count": 0,
-        "final_code": "",
-    }
-
-    result = code_validation_graph.invoke(input_state)  # type: ignore
-    final_code = result["final_code"]
-
-    return {"solution_html": final_code}
-
-
-def improve_code(state: State):
-    input_state: CodeValidationState = {
-        "prompt": (
-            "You are tasked with reviewing and improving the following HTML "
-            "solution file. Your goal is to ensure that the code is correct, "
-            "clear, and pedagogically aligned with the question context.\n\n"
-            "Carefully analyze structure, variable consistency, and mathematical "
-            "formatting, then improve readability and correctness while preserving "
-            "the intended instructional flow.\n\n"
-            f"General Guidelines for Solution File Guide:\n{resolve_prompt('solution_html_graph_prompt')}"
-        ),
-        "generated_code": state.get("solution_html", "") or "",
-        "validation_errors": [],
-        "refinement_count": 0,
-        "final_code": "",
-    }
-
-    result = code_validation_graph.invoke(input_state)  # type: ignore
-    final_code = result["final_code"]
-
-    return {"solution_html": final_code}
-
-
 workflow = StateGraph(State)
 workflow.add_node("retrieve_examples", retrieve_examples)
 workflow.add_node("generate_code", generate_code)
-workflow.add_node("validate_solution", validate_solution)
-workflow.add_node("improve_code", improve_code)
+
 
 workflow.add_edge(START, "retrieve_examples")
-workflow.add_conditional_edges(
-    "generate_code",
-    solution_present,
-    {"improve_code": "improve_code", "validate_solution": "validate_solution"},
-)
-workflow.add_edge("validate_solution", "improve_code")
-workflow.add_edge("improve_code", END)
-workflow.add_edge("retrieve_examples", END)
+workflow.add_edge("generate_code", END)
+
 
 app = workflow.compile()
 
