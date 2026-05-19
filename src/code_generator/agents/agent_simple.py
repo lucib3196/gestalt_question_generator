@@ -164,7 +164,7 @@ def cleanup_file_content(filename: str, content: str) -> str:
 
 
 class File(BaseModel):
-    filename: str = Field(..., description="The file name")
+    filename: str = Field(..., description="The file name must include the extension as well example question.html, server.js etc")
     content: str = Field(..., description="The actual text content of the file.")
     extension: str = Field(..., description="The file extension (e.g., '.js', '.py').")
 
