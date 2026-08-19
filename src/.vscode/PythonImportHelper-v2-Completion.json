@@ -1,0 +1,2637 @@
+[
+    {
+        "label": "tool",
+        "importPath": "langchain.tools",
+        "description": "langchain.tools",
+        "isExtraImport": true,
+        "detail": "langchain.tools",
+        "documentation": {}
+    },
+    {
+        "label": "Dict",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Optional",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "List",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Optional",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Optional",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Annotated",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Literal",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Sequence",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "TypedDict",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Optional",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Annotated",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "List",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Literal",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "TypedDict",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "List",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Annotated",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "List",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Literal",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "TypedDict",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Annotated",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "List",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Literal",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "TypedDict",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Annotated",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "List",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Literal",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "TypedDict",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Iterator",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Annotated",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "List",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Literal",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "TypedDict",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Literal",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Literal",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Any",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Any",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Any",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "base64",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "base64",
+        "description": "base64",
+        "detail": "base64",
+        "documentation": {}
+    },
+    {
+        "label": "io",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "io",
+        "description": "io",
+        "detail": "io",
+        "documentation": {}
+    },
+    {
+        "label": "zipfile",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "zipfile",
+        "description": "zipfile",
+        "detail": "zipfile",
+        "documentation": {}
+    },
+    {
+        "label": "create_agent",
+        "importPath": "langchain.agents",
+        "description": "langchain.agents",
+        "isExtraImport": true,
+        "detail": "langchain.agents",
+        "documentation": {}
+    },
+    {
+        "label": "create_agent",
+        "importPath": "langchain.agents",
+        "description": "langchain.agents",
+        "isExtraImport": true,
+        "detail": "langchain.agents",
+        "documentation": {}
+    },
+    {
+        "label": "tool",
+        "importPath": "langchain_core.tools",
+        "description": "langchain_core.tools",
+        "isExtraImport": true,
+        "detail": "langchain_core.tools",
+        "documentation": {}
+    },
+    {
+        "label": "tool",
+        "importPath": "langchain_core.tools",
+        "description": "langchain_core.tools",
+        "isExtraImport": true,
+        "detail": "langchain_core.tools",
+        "documentation": {}
+    },
+    {
+        "label": "prepare_zip",
+        "importPath": "src.ai_tools.file_tools",
+        "description": "src.ai_tools.file_tools",
+        "isExtraImport": true,
+        "detail": "src.ai_tools.file_tools",
+        "documentation": {}
+    },
+    {
+        "label": "Question",
+        "importPath": "src.models",
+        "description": "src.models",
+        "isExtraImport": true,
+        "detail": "src.models",
+        "documentation": {}
+    },
+    {
+        "label": "Question",
+        "importPath": "src.models",
+        "description": "src.models",
+        "isExtraImport": true,
+        "detail": "src.models",
+        "documentation": {}
+    },
+    {
+        "label": "Question",
+        "importPath": "src.models",
+        "description": "src.models",
+        "isExtraImport": true,
+        "detail": "src.models",
+        "documentation": {}
+    },
+    {
+        "label": "Question",
+        "importPath": "src.models",
+        "description": "src.models",
+        "isExtraImport": true,
+        "detail": "src.models",
+        "documentation": {}
+    },
+    {
+        "label": "CodeResponse",
+        "importPath": "src.models",
+        "description": "src.models",
+        "isExtraImport": true,
+        "detail": "src.models",
+        "documentation": {}
+    },
+    {
+        "label": "Question",
+        "importPath": "src.models",
+        "description": "src.models",
+        "isExtraImport": true,
+        "detail": "src.models",
+        "documentation": {}
+    },
+    {
+        "label": "QuestionTypes",
+        "importPath": "src.models",
+        "description": "src.models",
+        "isExtraImport": true,
+        "detail": "src.models",
+        "documentation": {}
+    },
+    {
+        "label": "CodeResponse",
+        "importPath": "src.models",
+        "description": "src.models",
+        "isExtraImport": true,
+        "detail": "src.models",
+        "documentation": {}
+    },
+    {
+        "label": "Question",
+        "importPath": "src.models",
+        "description": "src.models",
+        "isExtraImport": true,
+        "detail": "src.models",
+        "documentation": {}
+    },
+    {
+        "label": "CodeResponse",
+        "importPath": "src.models",
+        "description": "src.models",
+        "isExtraImport": true,
+        "detail": "src.models",
+        "documentation": {}
+    },
+    {
+        "label": "Question",
+        "importPath": "src.models",
+        "description": "src.models",
+        "isExtraImport": true,
+        "detail": "src.models",
+        "documentation": {}
+    },
+    {
+        "label": "CodeResponse",
+        "importPath": "src.models",
+        "description": "src.models",
+        "isExtraImport": true,
+        "detail": "src.models",
+        "documentation": {}
+    },
+    {
+        "label": "Question",
+        "importPath": "src.models",
+        "description": "src.models",
+        "isExtraImport": true,
+        "detail": "src.models",
+        "documentation": {}
+    },
+    {
+        "label": "CodeResponse",
+        "importPath": "src.models",
+        "description": "src.models",
+        "isExtraImport": true,
+        "detail": "src.models",
+        "documentation": {}
+    },
+    {
+        "label": "ValidationResult",
+        "importPath": "src.models",
+        "description": "src.models",
+        "isExtraImport": true,
+        "detail": "src.models",
+        "documentation": {}
+    },
+    {
+        "label": "model",
+        "importPath": "src.code_generator.agents",
+        "description": "src.code_generator.agents",
+        "isExtraImport": true,
+        "detail": "src.code_generator.agents",
+        "documentation": {}
+    },
+    {
+        "label": "gestalt_generator",
+        "importPath": "src.code_generator.agents",
+        "description": "src.code_generator.agents",
+        "isExtraImport": true,
+        "detail": "src.code_generator.agents",
+        "documentation": {}
+    },
+    {
+        "label": "GestaltState",
+        "importPath": "src.code_generator.agents",
+        "description": "src.code_generator.agents",
+        "isExtraImport": true,
+        "detail": "src.code_generator.agents",
+        "documentation": {}
+    },
+    {
+        "label": "question_html_tool",
+        "importPath": "src.code_generator.agents",
+        "description": "src.code_generator.agents",
+        "isExtraImport": true,
+        "detail": "src.code_generator.agents",
+        "documentation": {}
+    },
+    {
+        "label": "QState",
+        "importPath": "src.code_generator.agents",
+        "description": "src.code_generator.agents",
+        "isExtraImport": true,
+        "detail": "src.code_generator.agents",
+        "documentation": {}
+    },
+    {
+        "label": "server_js_tool",
+        "importPath": "src.code_generator.agents",
+        "description": "src.code_generator.agents",
+        "isExtraImport": true,
+        "detail": "src.code_generator.agents",
+        "documentation": {}
+    },
+    {
+        "label": "JSState",
+        "importPath": "src.code_generator.agents",
+        "description": "src.code_generator.agents",
+        "isExtraImport": true,
+        "detail": "src.code_generator.agents",
+        "documentation": {}
+    },
+    {
+        "label": "solution_html_tool",
+        "importPath": "src.code_generator.agents",
+        "description": "src.code_generator.agents",
+        "isExtraImport": true,
+        "detail": "src.code_generator.agents",
+        "documentation": {}
+    },
+    {
+        "label": "SolutionState",
+        "importPath": "src.code_generator.agents",
+        "description": "src.code_generator.agents",
+        "isExtraImport": true,
+        "detail": "src.code_generator.agents",
+        "documentation": {}
+    },
+    {
+        "label": "server_py_generator",
+        "importPath": "src.code_generator.agents",
+        "description": "src.code_generator.agents",
+        "isExtraImport": true,
+        "detail": "src.code_generator.agents",
+        "documentation": {}
+    },
+    {
+        "label": "PyState",
+        "importPath": "src.code_generator.agents",
+        "description": "src.code_generator.agents",
+        "isExtraImport": true,
+        "detail": "src.code_generator.agents",
+        "documentation": {}
+    },
+    {
+        "label": "model",
+        "importPath": "src.code_generator.agents",
+        "description": "src.code_generator.agents",
+        "isExtraImport": true,
+        "detail": "src.code_generator.agents",
+        "documentation": {}
+    },
+    {
+        "label": "Path",
+        "importPath": "pathlib",
+        "description": "pathlib",
+        "isExtraImport": true,
+        "detail": "pathlib",
+        "documentation": {}
+    },
+    {
+        "label": "Path",
+        "importPath": "pathlib",
+        "description": "pathlib",
+        "isExtraImport": true,
+        "detail": "pathlib",
+        "documentation": {}
+    },
+    {
+        "label": "Path",
+        "importPath": "pathlib",
+        "description": "pathlib",
+        "isExtraImport": true,
+        "detail": "pathlib",
+        "documentation": {}
+    },
+    {
+        "label": "Path",
+        "importPath": "pathlib",
+        "description": "pathlib",
+        "isExtraImport": true,
+        "detail": "pathlib",
+        "documentation": {}
+    },
+    {
+        "label": "Path",
+        "importPath": "pathlib",
+        "description": "pathlib",
+        "isExtraImport": true,
+        "detail": "pathlib",
+        "documentation": {}
+    },
+    {
+        "label": "Path",
+        "importPath": "pathlib",
+        "description": "pathlib",
+        "isExtraImport": true,
+        "detail": "pathlib",
+        "documentation": {}
+    },
+    {
+        "label": "Path",
+        "importPath": "pathlib",
+        "description": "pathlib",
+        "isExtraImport": true,
+        "detail": "pathlib",
+        "documentation": {}
+    },
+    {
+        "label": "Path",
+        "importPath": "pathlib",
+        "description": "pathlib",
+        "isExtraImport": true,
+        "detail": "pathlib",
+        "documentation": {}
+    },
+    {
+        "label": "Path",
+        "importPath": "pathlib",
+        "description": "pathlib",
+        "isExtraImport": true,
+        "detail": "pathlib",
+        "documentation": {}
+    },
+    {
+        "label": "Path",
+        "importPath": "pathlib",
+        "description": "pathlib",
+        "isExtraImport": true,
+        "detail": "pathlib",
+        "documentation": {}
+    },
+    {
+        "label": "Path",
+        "importPath": "pathlib",
+        "description": "pathlib",
+        "isExtraImport": true,
+        "detail": "pathlib",
+        "documentation": {}
+    },
+    {
+        "label": "Path",
+        "importPath": "pathlib",
+        "description": "pathlib",
+        "isExtraImport": true,
+        "detail": "pathlib",
+        "documentation": {}
+    },
+    {
+        "label": "Path",
+        "importPath": "pathlib",
+        "description": "pathlib",
+        "isExtraImport": true,
+        "detail": "pathlib",
+        "documentation": {}
+    },
+    {
+        "label": "Path",
+        "importPath": "pathlib",
+        "description": "pathlib",
+        "isExtraImport": true,
+        "detail": "pathlib",
+        "documentation": {}
+    },
+    {
+        "label": "Path",
+        "importPath": "pathlib",
+        "description": "pathlib",
+        "isExtraImport": true,
+        "detail": "pathlib",
+        "documentation": {}
+    },
+    {
+        "label": "Document",
+        "importPath": "langchain_core.documents",
+        "description": "langchain_core.documents",
+        "isExtraImport": true,
+        "detail": "langchain_core.documents",
+        "documentation": {}
+    },
+    {
+        "label": "Document",
+        "importPath": "langchain_core.documents",
+        "description": "langchain_core.documents",
+        "isExtraImport": true,
+        "detail": "langchain_core.documents",
+        "documentation": {}
+    },
+    {
+        "label": "Document",
+        "importPath": "langchain_core.documents",
+        "description": "langchain_core.documents",
+        "isExtraImport": true,
+        "detail": "langchain_core.documents",
+        "documentation": {}
+    },
+    {
+        "label": "Document",
+        "importPath": "langchain_core.documents",
+        "description": "langchain_core.documents",
+        "isExtraImport": true,
+        "detail": "langchain_core.documents",
+        "documentation": {}
+    },
+    {
+        "label": "Document",
+        "importPath": "langchain_core.documents",
+        "description": "langchain_core.documents",
+        "isExtraImport": true,
+        "detail": "langchain_core.documents",
+        "documentation": {}
+    },
+    {
+        "label": "Document",
+        "importPath": "langchain_core.documents",
+        "description": "langchain_core.documents",
+        "isExtraImport": true,
+        "detail": "langchain_core.documents",
+        "documentation": {}
+    },
+    {
+        "label": "BaseModel",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "Field",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "BaseModel",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "Field",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "Field",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "field_validator",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "model_validator",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "BaseModel",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "Field",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "BaseModel",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "QuestionMetaData",
+        "importPath": "src.code_generator.graphs.question_metadata_graph",
+        "description": "src.code_generator.graphs.question_metadata_graph",
+        "isExtraImport": true,
+        "detail": "src.code_generator.graphs.question_metadata_graph",
+        "documentation": {}
+    },
+    {
+        "label": "State",
+        "importPath": "src.code_generator.graphs.question_metadata_graph",
+        "description": "src.code_generator.graphs.question_metadata_graph",
+        "isExtraImport": true,
+        "detail": "src.code_generator.graphs.question_metadata_graph",
+        "documentation": {}
+    },
+    {
+        "label": "app",
+        "importPath": "src.code_generator.graphs.question_metadata_graph",
+        "description": "src.code_generator.graphs.question_metadata_graph",
+        "isExtraImport": true,
+        "detail": "src.code_generator.graphs.question_metadata_graph",
+        "documentation": {}
+    },
+    {
+        "label": "QuestionMetaData",
+        "importPath": "src.code_generator.graphs.question_metadata_graph",
+        "description": "src.code_generator.graphs.question_metadata_graph",
+        "isExtraImport": true,
+        "detail": "src.code_generator.graphs.question_metadata_graph",
+        "documentation": {}
+    },
+    {
+        "label": "app",
+        "importPath": "src.code_generator.graphs.question_metadata_graph",
+        "description": "src.code_generator.graphs.question_metadata_graph",
+        "isExtraImport": true,
+        "detail": "src.code_generator.graphs.question_metadata_graph",
+        "documentation": {}
+    },
+    {
+        "label": "State",
+        "importPath": "src.code_generator.graphs.question_metadata_graph",
+        "description": "src.code_generator.graphs.question_metadata_graph",
+        "isExtraImport": true,
+        "detail": "src.code_generator.graphs.question_metadata_graph",
+        "documentation": {}
+    },
+    {
+        "label": "re",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "re",
+        "description": "re",
+        "detail": "re",
+        "documentation": {}
+    },
+    {
+        "label": "html",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "html",
+        "description": "html",
+        "detail": "html",
+        "documentation": {}
+    },
+    {
+        "label": "json",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "json",
+        "description": "json",
+        "detail": "json",
+        "documentation": {}
+    },
+    {
+        "label": "END",
+        "importPath": "langgraph.graph",
+        "description": "langgraph.graph",
+        "isExtraImport": true,
+        "detail": "langgraph.graph",
+        "documentation": {}
+    },
+    {
+        "label": "START",
+        "importPath": "langgraph.graph",
+        "description": "langgraph.graph",
+        "isExtraImport": true,
+        "detail": "langgraph.graph",
+        "documentation": {}
+    },
+    {
+        "label": "StateGraph",
+        "importPath": "langgraph.graph",
+        "description": "langgraph.graph",
+        "isExtraImport": true,
+        "detail": "langgraph.graph",
+        "documentation": {}
+    },
+    {
+        "label": "END",
+        "importPath": "langgraph.graph",
+        "description": "langgraph.graph",
+        "isExtraImport": true,
+        "detail": "langgraph.graph",
+        "documentation": {}
+    },
+    {
+        "label": "START",
+        "importPath": "langgraph.graph",
+        "description": "langgraph.graph",
+        "isExtraImport": true,
+        "detail": "langgraph.graph",
+        "documentation": {}
+    },
+    {
+        "label": "StateGraph",
+        "importPath": "langgraph.graph",
+        "description": "langgraph.graph",
+        "isExtraImport": true,
+        "detail": "langgraph.graph",
+        "documentation": {}
+    },
+    {
+        "label": "END",
+        "importPath": "langgraph.graph",
+        "description": "langgraph.graph",
+        "isExtraImport": true,
+        "detail": "langgraph.graph",
+        "documentation": {}
+    },
+    {
+        "label": "START",
+        "importPath": "langgraph.graph",
+        "description": "langgraph.graph",
+        "isExtraImport": true,
+        "detail": "langgraph.graph",
+        "documentation": {}
+    },
+    {
+        "label": "StateGraph",
+        "importPath": "langgraph.graph",
+        "description": "langgraph.graph",
+        "isExtraImport": true,
+        "detail": "langgraph.graph",
+        "documentation": {}
+    },
+    {
+        "label": "END",
+        "importPath": "langgraph.graph",
+        "description": "langgraph.graph",
+        "isExtraImport": true,
+        "detail": "langgraph.graph",
+        "documentation": {}
+    },
+    {
+        "label": "START",
+        "importPath": "langgraph.graph",
+        "description": "langgraph.graph",
+        "isExtraImport": true,
+        "detail": "langgraph.graph",
+        "documentation": {}
+    },
+    {
+        "label": "StateGraph",
+        "importPath": "langgraph.graph",
+        "description": "langgraph.graph",
+        "isExtraImport": true,
+        "detail": "langgraph.graph",
+        "documentation": {}
+    },
+    {
+        "label": "END",
+        "importPath": "langgraph.graph",
+        "description": "langgraph.graph",
+        "isExtraImport": true,
+        "detail": "langgraph.graph",
+        "documentation": {}
+    },
+    {
+        "label": "START",
+        "importPath": "langgraph.graph",
+        "description": "langgraph.graph",
+        "isExtraImport": true,
+        "detail": "langgraph.graph",
+        "documentation": {}
+    },
+    {
+        "label": "StateGraph",
+        "importPath": "langgraph.graph",
+        "description": "langgraph.graph",
+        "isExtraImport": true,
+        "detail": "langgraph.graph",
+        "documentation": {}
+    },
+    {
+        "label": "END",
+        "importPath": "langgraph.graph",
+        "description": "langgraph.graph",
+        "isExtraImport": true,
+        "detail": "langgraph.graph",
+        "documentation": {}
+    },
+    {
+        "label": "START",
+        "importPath": "langgraph.graph",
+        "description": "langgraph.graph",
+        "isExtraImport": true,
+        "detail": "langgraph.graph",
+        "documentation": {}
+    },
+    {
+        "label": "StateGraph",
+        "importPath": "langgraph.graph",
+        "description": "langgraph.graph",
+        "isExtraImport": true,
+        "detail": "langgraph.graph",
+        "documentation": {}
+    },
+    {
+        "label": "END",
+        "importPath": "langgraph.graph",
+        "description": "langgraph.graph",
+        "isExtraImport": true,
+        "detail": "langgraph.graph",
+        "documentation": {}
+    },
+    {
+        "label": "START",
+        "importPath": "langgraph.graph",
+        "description": "langgraph.graph",
+        "isExtraImport": true,
+        "detail": "langgraph.graph",
+        "documentation": {}
+    },
+    {
+        "label": "StateGraph",
+        "importPath": "langgraph.graph",
+        "description": "langgraph.graph",
+        "isExtraImport": true,
+        "detail": "langgraph.graph",
+        "documentation": {}
+    },
+    {
+        "label": "save_graph_visualization",
+        "importPath": "src.utils",
+        "description": "src.utils",
+        "isExtraImport": true,
+        "detail": "src.utils",
+        "documentation": {}
+    },
+    {
+        "label": "to_serializable",
+        "importPath": "src.utils",
+        "description": "src.utils",
+        "isExtraImport": true,
+        "detail": "src.utils",
+        "documentation": {}
+    },
+    {
+        "label": "to_serializable",
+        "importPath": "src.utils",
+        "description": "src.utils",
+        "isExtraImport": true,
+        "detail": "src.utils",
+        "documentation": {}
+    },
+    {
+        "label": "app",
+        "importPath": "src.code_generator.graphs.question_html_graph",
+        "description": "src.code_generator.graphs.question_html_graph",
+        "isExtraImport": true,
+        "detail": "src.code_generator.graphs.question_html_graph",
+        "documentation": {}
+    },
+    {
+        "label": "State",
+        "importPath": "src.code_generator.graphs.question_html_graph",
+        "description": "src.code_generator.graphs.question_html_graph",
+        "isExtraImport": true,
+        "detail": "src.code_generator.graphs.question_html_graph",
+        "documentation": {}
+    },
+    {
+        "label": "app",
+        "importPath": "src.code_generator.graphs.server_js_graph",
+        "description": "src.code_generator.graphs.server_js_graph",
+        "isExtraImport": true,
+        "detail": "src.code_generator.graphs.server_js_graph",
+        "documentation": {}
+    },
+    {
+        "label": "State",
+        "importPath": "src.code_generator.graphs.server_js_graph",
+        "description": "src.code_generator.graphs.server_js_graph",
+        "isExtraImport": true,
+        "detail": "src.code_generator.graphs.server_js_graph",
+        "documentation": {}
+    },
+    {
+        "label": "app",
+        "importPath": "src.code_generator.graphs.server_py_graph",
+        "description": "src.code_generator.graphs.server_py_graph",
+        "isExtraImport": true,
+        "detail": "src.code_generator.graphs.server_py_graph",
+        "documentation": {}
+    },
+    {
+        "label": "State",
+        "importPath": "src.code_generator.graphs.server_py_graph",
+        "description": "src.code_generator.graphs.server_py_graph",
+        "isExtraImport": true,
+        "detail": "src.code_generator.graphs.server_py_graph",
+        "documentation": {}
+    },
+    {
+        "label": "app",
+        "importPath": "src.code_generator.graphs.solution_html_graph",
+        "description": "src.code_generator.graphs.solution_html_graph",
+        "isExtraImport": true,
+        "detail": "src.code_generator.graphs.solution_html_graph",
+        "documentation": {}
+    },
+    {
+        "label": "State",
+        "importPath": "src.code_generator.graphs.solution_html_graph",
+        "description": "src.code_generator.graphs.solution_html_graph",
+        "isExtraImport": true,
+        "detail": "src.code_generator.graphs.solution_html_graph",
+        "documentation": {}
+    },
+    {
+        "label": "init_chat_model",
+        "importPath": "langchain.chat_models",
+        "description": "langchain.chat_models",
+        "isExtraImport": true,
+        "detail": "langchain.chat_models",
+        "documentation": {}
+    },
+    {
+        "label": "AIMessage",
+        "importPath": "langchain.messages",
+        "description": "langchain.messages",
+        "isExtraImport": true,
+        "detail": "langchain.messages",
+        "documentation": {}
+    },
+    {
+        "label": "uuid4",
+        "importPath": "uuid",
+        "description": "uuid",
+        "isExtraImport": true,
+        "detail": "uuid",
+        "documentation": {}
+    },
+    {
+        "label": "UUID",
+        "importPath": "uuid",
+        "description": "uuid",
+        "isExtraImport": true,
+        "detail": "uuid",
+        "documentation": {}
+    },
+    {
+        "label": "operator",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "operator",
+        "description": "operator",
+        "detail": "operator",
+        "documentation": {}
+    },
+    {
+        "label": "add",
+        "importPath": "operator",
+        "description": "operator",
+        "isExtraImport": true,
+        "detail": "operator",
+        "documentation": {}
+    },
+    {
+        "label": "Command",
+        "importPath": "langgraph.types",
+        "description": "langgraph.types",
+        "isExtraImport": true,
+        "detail": "langgraph.types",
+        "documentation": {}
+    },
+    {
+        "label": "Command",
+        "importPath": "langgraph.types",
+        "description": "langgraph.types",
+        "isExtraImport": true,
+        "detail": "langgraph.types",
+        "documentation": {}
+    },
+    {
+        "label": "Command",
+        "importPath": "langgraph.types",
+        "description": "langgraph.types",
+        "isExtraImport": true,
+        "detail": "langgraph.types",
+        "documentation": {}
+    },
+    {
+        "label": "Command",
+        "importPath": "langgraph.types",
+        "description": "langgraph.types",
+        "isExtraImport": true,
+        "detail": "langgraph.types",
+        "documentation": {}
+    },
+    {
+        "label": "Command",
+        "importPath": "langgraph.types",
+        "description": "langgraph.types",
+        "isExtraImport": true,
+        "detail": "langgraph.types",
+        "documentation": {}
+    },
+    {
+        "label": "model",
+        "importPath": "src.code_generator.graphs",
+        "description": "src.code_generator.graphs",
+        "isExtraImport": true,
+        "detail": "src.code_generator.graphs",
+        "documentation": {}
+    },
+    {
+        "label": "resolve_prompt",
+        "importPath": "src.code_generator.graphs",
+        "description": "src.code_generator.graphs",
+        "isExtraImport": true,
+        "detail": "src.code_generator.graphs",
+        "documentation": {}
+    },
+    {
+        "label": "to_serializable",
+        "importPath": "src.code_generator.graphs",
+        "description": "src.code_generator.graphs",
+        "isExtraImport": true,
+        "detail": "src.code_generator.graphs",
+        "documentation": {}
+    },
+    {
+        "label": "save_graph_visualization",
+        "importPath": "src.code_generator.graphs",
+        "description": "src.code_generator.graphs",
+        "isExtraImport": true,
+        "detail": "src.code_generator.graphs",
+        "documentation": {}
+    },
+    {
+        "label": "model",
+        "importPath": "src.code_generator.graphs",
+        "description": "src.code_generator.graphs",
+        "isExtraImport": true,
+        "detail": "src.code_generator.graphs",
+        "documentation": {}
+    },
+    {
+        "label": "resolve_prompt",
+        "importPath": "src.code_generator.graphs",
+        "description": "src.code_generator.graphs",
+        "isExtraImport": true,
+        "detail": "src.code_generator.graphs",
+        "documentation": {}
+    },
+    {
+        "label": "vector_store",
+        "importPath": "src.code_generator.graphs",
+        "description": "src.code_generator.graphs",
+        "isExtraImport": true,
+        "detail": "src.code_generator.graphs",
+        "documentation": {}
+    },
+    {
+        "label": "model",
+        "importPath": "src.code_generator.graphs",
+        "description": "src.code_generator.graphs",
+        "isExtraImport": true,
+        "detail": "src.code_generator.graphs",
+        "documentation": {}
+    },
+    {
+        "label": "resolve_prompt",
+        "importPath": "src.code_generator.graphs",
+        "description": "src.code_generator.graphs",
+        "isExtraImport": true,
+        "detail": "src.code_generator.graphs",
+        "documentation": {}
+    },
+    {
+        "label": "vector_store",
+        "importPath": "src.code_generator.graphs",
+        "description": "src.code_generator.graphs",
+        "isExtraImport": true,
+        "detail": "src.code_generator.graphs",
+        "documentation": {}
+    },
+    {
+        "label": "save_graph_visualization",
+        "importPath": "src.code_generator.graphs",
+        "description": "src.code_generator.graphs",
+        "isExtraImport": true,
+        "detail": "src.code_generator.graphs",
+        "documentation": {}
+    },
+    {
+        "label": "to_serializable",
+        "importPath": "src.code_generator.graphs",
+        "description": "src.code_generator.graphs",
+        "isExtraImport": true,
+        "detail": "src.code_generator.graphs",
+        "documentation": {}
+    },
+    {
+        "label": "CodeValidationState",
+        "importPath": "src.code_generator.graphs",
+        "description": "src.code_generator.graphs",
+        "isExtraImport": true,
+        "detail": "src.code_generator.graphs",
+        "documentation": {}
+    },
+    {
+        "label": "code_validation_graph",
+        "importPath": "src.code_generator.graphs",
+        "description": "src.code_generator.graphs",
+        "isExtraImport": true,
+        "detail": "src.code_generator.graphs",
+        "documentation": {}
+    },
+    {
+        "label": "model",
+        "importPath": "src.code_generator.graphs",
+        "description": "src.code_generator.graphs",
+        "isExtraImport": true,
+        "detail": "src.code_generator.graphs",
+        "documentation": {}
+    },
+    {
+        "label": "resolve_prompt",
+        "importPath": "src.code_generator.graphs",
+        "description": "src.code_generator.graphs",
+        "isExtraImport": true,
+        "detail": "src.code_generator.graphs",
+        "documentation": {}
+    },
+    {
+        "label": "vector_store",
+        "importPath": "src.code_generator.graphs",
+        "description": "src.code_generator.graphs",
+        "isExtraImport": true,
+        "detail": "src.code_generator.graphs",
+        "documentation": {}
+    },
+    {
+        "label": "save_graph_visualization",
+        "importPath": "src.code_generator.graphs",
+        "description": "src.code_generator.graphs",
+        "isExtraImport": true,
+        "detail": "src.code_generator.graphs",
+        "documentation": {}
+    },
+    {
+        "label": "to_serializable",
+        "importPath": "src.code_generator.graphs",
+        "description": "src.code_generator.graphs",
+        "isExtraImport": true,
+        "detail": "src.code_generator.graphs",
+        "documentation": {}
+    },
+    {
+        "label": "CodeValidationState",
+        "importPath": "src.code_generator.graphs",
+        "description": "src.code_generator.graphs",
+        "isExtraImport": true,
+        "detail": "src.code_generator.graphs",
+        "documentation": {}
+    },
+    {
+        "label": "code_validation_graph",
+        "importPath": "src.code_generator.graphs",
+        "description": "src.code_generator.graphs",
+        "isExtraImport": true,
+        "detail": "src.code_generator.graphs",
+        "documentation": {}
+    },
+    {
+        "label": "model",
+        "importPath": "src.code_generator.graphs",
+        "description": "src.code_generator.graphs",
+        "isExtraImport": true,
+        "detail": "src.code_generator.graphs",
+        "documentation": {}
+    },
+    {
+        "label": "resolve_prompt",
+        "importPath": "src.code_generator.graphs",
+        "description": "src.code_generator.graphs",
+        "isExtraImport": true,
+        "detail": "src.code_generator.graphs",
+        "documentation": {}
+    },
+    {
+        "label": "vector_store",
+        "importPath": "src.code_generator.graphs",
+        "description": "src.code_generator.graphs",
+        "isExtraImport": true,
+        "detail": "src.code_generator.graphs",
+        "documentation": {}
+    },
+    {
+        "label": "save_graph_visualization",
+        "importPath": "src.code_generator.graphs",
+        "description": "src.code_generator.graphs",
+        "isExtraImport": true,
+        "detail": "src.code_generator.graphs",
+        "documentation": {}
+    },
+    {
+        "label": "to_serializable",
+        "importPath": "src.code_generator.graphs",
+        "description": "src.code_generator.graphs",
+        "isExtraImport": true,
+        "detail": "src.code_generator.graphs",
+        "documentation": {}
+    },
+    {
+        "label": "CodeValidationState",
+        "importPath": "src.code_generator.graphs",
+        "description": "src.code_generator.graphs",
+        "isExtraImport": true,
+        "detail": "src.code_generator.graphs",
+        "documentation": {}
+    },
+    {
+        "label": "code_validation_graph",
+        "importPath": "src.code_generator.graphs",
+        "description": "src.code_generator.graphs",
+        "isExtraImport": true,
+        "detail": "src.code_generator.graphs",
+        "documentation": {}
+    },
+    {
+        "label": "BaseLoader",
+        "importPath": "langchain_core.document_loaders",
+        "description": "langchain_core.document_loaders",
+        "isExtraImport": true,
+        "detail": "langchain_core.document_loaders",
+        "documentation": {}
+    },
+    {
+        "label": "pandas",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "pandas",
+        "description": "pandas",
+        "detail": "pandas",
+        "documentation": {}
+    },
+    {
+        "label": "AstraDBVectorStore",
+        "importPath": "langchain_astradb",
+        "description": "langchain_astradb",
+        "isExtraImport": true,
+        "detail": "langchain_astradb",
+        "documentation": {}
+    },
+    {
+        "label": "get_settings",
+        "importPath": "src.core.settings",
+        "description": "src.core.settings",
+        "isExtraImport": true,
+        "detail": "src.core.settings",
+        "documentation": {}
+    },
+    {
+        "label": "get_settings",
+        "importPath": "src.core.settings",
+        "description": "src.core.settings",
+        "isExtraImport": true,
+        "detail": "src.core.settings",
+        "documentation": {}
+    },
+    {
+        "label": "GoogleGenerativeAIEmbeddings",
+        "importPath": "langchain_google_genai",
+        "description": "langchain_google_genai",
+        "isExtraImport": true,
+        "detail": "langchain_google_genai",
+        "documentation": {}
+    },
+    {
+        "label": "logging",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "logging",
+        "description": "logging",
+        "detail": "logging",
+        "documentation": {}
+    },
+    {
+        "label": "os",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os",
+        "description": "os",
+        "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "BaseSettings",
+        "importPath": "pydantic_settings",
+        "description": "pydantic_settings",
+        "isExtraImport": true,
+        "detail": "pydantic_settings",
+        "documentation": {}
+    },
+    {
+        "label": "load_dotenv",
+        "importPath": "dotenv",
+        "description": "dotenv",
+        "isExtraImport": true,
+        "detail": "dotenv",
+        "documentation": {}
+    },
+    {
+        "label": "load_dotenv",
+        "importPath": "dotenv",
+        "description": "dotenv",
+        "isExtraImport": true,
+        "detail": "dotenv",
+        "documentation": {}
+    },
+    {
+        "label": "load_dotenv",
+        "importPath": "dotenv",
+        "description": "dotenv",
+        "isExtraImport": true,
+        "detail": "dotenv",
+        "documentation": {}
+    },
+    {
+        "label": "lru_cache",
+        "importPath": "functools",
+        "description": "functools",
+        "isExtraImport": true,
+        "detail": "functools",
+        "documentation": {}
+    },
+    {
+        "label": "HumanMessage",
+        "importPath": "langchain_core.messages",
+        "description": "langchain_core.messages",
+        "isExtraImport": true,
+        "detail": "langchain_core.messages",
+        "documentation": {}
+    },
+    {
+        "label": "ImageContentBlock",
+        "importPath": "langchain_core.messages",
+        "description": "langchain_core.messages",
+        "isExtraImport": true,
+        "detail": "langchain_core.messages",
+        "documentation": {}
+    },
+    {
+        "label": "SystemMessage",
+        "importPath": "langchain_core.messages",
+        "description": "langchain_core.messages",
+        "isExtraImport": true,
+        "detail": "langchain_core.messages",
+        "documentation": {}
+    },
+    {
+        "label": "SystemMessage",
+        "importPath": "langchain_core.messages",
+        "description": "langchain_core.messages",
+        "isExtraImport": true,
+        "detail": "langchain_core.messages",
+        "documentation": {}
+    },
+    {
+        "label": "ChatOpenAI",
+        "importPath": "langchain_openai",
+        "description": "langchain_openai",
+        "isExtraImport": true,
+        "detail": "langchain_openai",
+        "documentation": {}
+    },
+    {
+        "label": "httpx",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "httpx",
+        "description": "httpx",
+        "detail": "httpx",
+        "documentation": {}
+    },
+    {
+        "label": "ChatPromptTemplate",
+        "importPath": "langchain_core.prompts",
+        "description": "langchain_core.prompts",
+        "isExtraImport": true,
+        "detail": "langchain_core.prompts",
+        "documentation": {}
+    },
+    {
+        "label": "ChatPromptTemplate",
+        "importPath": "langchain_core.prompts",
+        "description": "langchain_core.prompts",
+        "isExtraImport": true,
+        "detail": "langchain_core.prompts",
+        "documentation": {}
+    },
+    {
+        "label": "Client",
+        "importPath": "langsmith",
+        "description": "langsmith",
+        "isExtraImport": true,
+        "detail": "langsmith",
+        "documentation": {}
+    },
+    {
+        "label": "logger",
+        "importPath": "src.core.logger",
+        "description": "src.core.logger",
+        "isExtraImport": true,
+        "detail": "src.core.logger",
+        "documentation": {}
+    },
+    {
+        "label": "date",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "time",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "CompiledStateGraph",
+        "importPath": "langgraph.graph.state",
+        "description": "langgraph.graph.state",
+        "isExtraImport": true,
+        "detail": "langgraph.graph.state",
+        "documentation": {}
+    },
+    {
+        "label": "prepare_zip",
+        "kind": 2,
+        "importPath": "ai_tools.file_tools",
+        "description": "ai_tools.file_tools",
+        "peekOfCode": "def prepare_zip(\n    files: Dict[str, str],\n    zip_name: Optional[str] = \"gestalt_module.zip\",\n) -> Dict[str, str]:\n    \"\"\"\n    Packages provided files into a ZIP archive and returns it as Base64.\n    Args:\n        files:\n            A dictionary mapping filenames to file contents.\n            Example:",
+        "detail": "ai_tools.file_tools",
+        "documentation": {}
+    },
+    {
+        "label": "generate_gestalt_module",
+        "kind": 2,
+        "importPath": "code_generator.agents.agent_module",
+        "description": "code_generator.agents.agent_module",
+        "peekOfCode": "def generate_gestalt_module(\n    question_text: str,\n    solution_guide: str | None,\n    final_answer: str | None,\n    isAdaptive: bool = True,\n) -> dict:\n    \"\"\"\n    Generate a complete Gestalt module package.\n    This tool should be invoked whenever a user wants to create a **full Gestalt module**.\n    A Gestalt module is a fully self-contained set of educational assets representing a",
+        "detail": "code_generator.agents.agent_module",
+        "documentation": {}
+    },
+    {
+        "label": "agent",
+        "kind": 5,
+        "importPath": "code_generator.agents.agent_module",
+        "description": "code_generator.agents.agent_module",
+        "peekOfCode": "agent = create_agent(\n    model=model,\n    # checkpointer=InMemorySaver(),\n    tools=[generate_gestalt_module, prepare_zip],\n    system_prompt=\"\",\n)",
+        "detail": "code_generator.agents.agent_module",
+        "documentation": {}
+    },
+    {
+        "label": "File",
+        "kind": 6,
+        "importPath": "code_generator.agents.agent_simple",
+        "description": "code_generator.agents.agent_simple",
+        "peekOfCode": "class File(BaseModel):\n    filename: str = Field(..., description=\"The file name must include the extension as well example question.html, server.js etc\")\n    content: str = Field(..., description=\"The actual text content of the file.\")\n    extension: str = Field(..., description=\"The file extension (e.g., '.js', '.py').\")\nclass FinalQuestionPayload(BaseModel):\n    \"\"\"Final payload containing metadata and generated files for persistence.\"\"\"\n    metadata: QuestionMetaData = Field(\n        ...,\n        description=\"Canonical question metadata produced by generate_question_metadata.\",\n    )",
+        "detail": "code_generator.agents.agent_simple",
+        "documentation": {}
+    },
+    {
+        "label": "FinalQuestionPayload",
+        "kind": 6,
+        "importPath": "code_generator.agents.agent_simple",
+        "description": "code_generator.agents.agent_simple",
+        "peekOfCode": "class FinalQuestionPayload(BaseModel):\n    \"\"\"Final payload containing metadata and generated files for persistence.\"\"\"\n    metadata: QuestionMetaData = Field(\n        ...,\n        description=\"Canonical question metadata produced by generate_question_metadata.\",\n    )\n    files: List[File] = []\nclass ImageResponse(BaseModel):\n    url: str\n@tool",
+        "detail": "code_generator.agents.agent_simple",
+        "documentation": {}
+    },
+    {
+        "label": "ImageResponse",
+        "kind": 6,
+        "importPath": "code_generator.agents.agent_simple",
+        "description": "code_generator.agents.agent_simple",
+        "peekOfCode": "class ImageResponse(BaseModel):\n    url: str\n@tool\ndef generate_question_html(question: str, isAdaptive: bool):\n    \"\"\"\n    Generate a formatted `question.html` file using established HTML conventions,\n    grounded in examples retrieved from the Question HTML vectorstore.\n    This tool takes a **complete, finalized natural-language question** and a flag\n    indicating whether the question is **Adaptive** or **non-adaptive**.\n    It returns TWO things:",
+        "detail": "code_generator.agents.agent_simple",
+        "documentation": {}
+    },
+    {
+        "label": "safe_string_cleanup",
+        "kind": 2,
+        "importPath": "code_generator.agents.agent_simple",
+        "description": "code_generator.agents.agent_simple",
+        "peekOfCode": "def safe_string_cleanup(\n    text: Optional[str],\n    *,\n    remove_markdown_fences: bool = True,\n    normalize_newlines: bool = True,\n    unescape_html_entities: bool = True,\n    collapse_excess_newlines: bool = True,\n    strip_trailing_whitespace: bool = True,\n    strip_surrounding_whitespace: bool = True,\n) -> str:",
+        "detail": "code_generator.agents.agent_simple",
+        "documentation": {}
+    },
+    {
+        "label": "cleanup_file_content",
+        "kind": 2,
+        "importPath": "code_generator.agents.agent_simple",
+        "description": "code_generator.agents.agent_simple",
+        "peekOfCode": "def cleanup_file_content(filename: str, content: str) -> str:\n    suffix = Path(filename).suffix\n    if suffix == \".html\":\n        return safe_string_cleanup(\n            content,\n            unescape_html_entities=False,\n        )\n    elif suffix in [\".js\", \".ts\"]:\n        return safe_string_cleanup(\n            content,",
+        "detail": "code_generator.agents.agent_simple",
+        "documentation": {}
+    },
+    {
+        "label": "generate_question_html",
+        "kind": 2,
+        "importPath": "code_generator.agents.agent_simple",
+        "description": "code_generator.agents.agent_simple",
+        "peekOfCode": "def generate_question_html(question: str, isAdaptive: bool):\n    \"\"\"\n    Generate a formatted `question.html` file using established HTML conventions,\n    grounded in examples retrieved from the Question HTML vectorstore.\n    This tool takes a **complete, finalized natural-language question** and a flag\n    indicating whether the question is **Adaptive** or **non-adaptive**.\n    It returns TWO things:\n    1. A fully formatted `question.html` file that follows the platform’s\n       structural, semantic, and stylistic conventions.\n    2. The set of retrieved reference documents used to guide the formatting",
+        "detail": "code_generator.agents.agent_simple",
+        "documentation": {}
+    },
+    {
+        "label": "generate_server_js",
+        "kind": 2,
+        "importPath": "code_generator.agents.agent_simple",
+        "description": "code_generator.agents.agent_simple",
+        "peekOfCode": "def generate_server_js(\n    question_html: str,\n    solution_guide: Optional[str] = None,\n):\n    \"\"\"\n    Generate a fully structured `server.js` file that implements the backend\n    logic for an **adaptive question**, grounded in retrieved reference examples.\n    This tool takes a **complete `question.html` file** and an optional\n    **solution guide**, and synthesizes the JavaScript code required to:\n    - Generate dynamic parameters at runtime",
+        "detail": "code_generator.agents.agent_simple",
+        "documentation": {}
+    },
+    {
+        "label": "generate_server_py",
+        "kind": 2,
+        "importPath": "code_generator.agents.agent_simple",
+        "description": "code_generator.agents.agent_simple",
+        "peekOfCode": "def generate_server_py(\n    question_html: str,\n    solution_guide: Optional[str] = None,\n):\n    \"\"\"\n    Generate a fully structured `server.py` file that implements the backend\n    logic for an adaptive question, grounded in retrieved reference examples.\n    This tool takes a complete `question.html` file and an optional\n    solution guide, and synthesizes the Python code required to:\n    - Generate dynamic parameters at runtime",
+        "detail": "code_generator.agents.agent_simple",
+        "documentation": {}
+    },
+    {
+        "label": "generate_question_metadata",
+        "kind": 2,
+        "importPath": "code_generator.agents.agent_simple",
+        "description": "code_generator.agents.agent_simple",
+        "peekOfCode": "def generate_question_metadata(\n    question_text: str,\n    question_html: Optional[str],\n    isAdaptive: bool,\n):\n    \"\"\"\n    Build canonical question metadata used by the final packaging step.\n    Call this after question generation and before building the final payload so\n    metadata is normalized to platform schema expectations. If `question_html`\n    is missing, it is treated as an empty string.",
+        "detail": "code_generator.agents.agent_simple",
+        "documentation": {}
+    },
+    {
+        "label": "generate_solution_html",
+        "kind": 2,
+        "importPath": "code_generator.agents.agent_simple",
+        "description": "code_generator.agents.agent_simple",
+        "peekOfCode": "def generate_solution_html(\n    question_html: str,\n    solution_guide: Optional[str] = None,\n    isAdaptive: bool = False,\n    server_file: str | None = None,\n):\n    \"\"\"\n    Generate a fully structured `solution.html` file that presents the\n    step-by-step solution and final answer for a question.\n    This tool takes a **complete `question.html` file** as its primary",
+        "detail": "code_generator.agents.agent_simple",
+        "documentation": {}
+    },
+    {
+        "label": "final_question_payload",
+        "kind": 2,
+        "importPath": "code_generator.agents.agent_simple",
+        "description": "code_generator.agents.agent_simple",
+        "peekOfCode": "def final_question_payload(metadata: QuestionMetaData, files: List[File]):\n    \"\"\"\n    Create the final question payload for storage.\n    Use this as the LAST tool call when the educator is ready to finalize.\n    Requirements:\n    - Metadata must be generated via `generate_question_metadata`.\n    - At least one generated file must be included.\n    - File names must use proper extensions that match file contents\n      (for example, use `server.js`, not `server_js`).\n      Since this is the final payload message do not show the files or metadata directly unless specirfically mentioned this is meant to keep the chat messages complete.",
+        "detail": "code_generator.agents.agent_simple",
+        "documentation": {}
+    },
+    {
+        "label": "tools",
+        "kind": 5,
+        "importPath": "code_generator.agents.agent_simple",
+        "description": "code_generator.agents.agent_simple",
+        "peekOfCode": "tools = [\n    generate_question_html,\n    generate_server_js,\n    generate_solution_html,\n    generate_server_py,\n    generate_question_metadata,\n    final_question_payload,\n    # generate_image,\n]\nsystem_prompt = Path(r\"src/prompts/gestalt_educator_agent_prompt.md\").read_text()",
+        "detail": "code_generator.agents.agent_simple",
+        "documentation": {}
+    },
+    {
+        "label": "system_prompt",
+        "kind": 5,
+        "importPath": "code_generator.agents.agent_simple",
+        "description": "code_generator.agents.agent_simple",
+        "peekOfCode": "system_prompt = Path(r\"src/prompts/gestalt_educator_agent_prompt.md\").read_text()\nsystem_prompt += \"\"\"You can also generate images. Available Tools. \"\"\"\nfor t in tools:\n    system_prompt += str(t.__doc__)\nagent = create_agent(\n    model,\n    tools=tools,\n    system_prompt=system_prompt,\n)",
+        "detail": "code_generator.agents.agent_simple",
+        "documentation": {}
+    },
+    {
+        "label": "agent",
+        "kind": 5,
+        "importPath": "code_generator.agents.agent_simple",
+        "description": "code_generator.agents.agent_simple",
+        "peekOfCode": "agent = create_agent(\n    model,\n    tools=tools,\n    system_prompt=system_prompt,\n)",
+        "detail": "code_generator.agents.agent_simple",
+        "documentation": {}
+    },
+    {
+        "label": "State",
+        "kind": 6,
+        "importPath": "code_generator.generator.gestalt_generator",
+        "description": "code_generator.generator.gestalt_generator",
+        "peekOfCode": "class State(TypedDict):\n    question: Question\n    metadata: QuestionMetaData | None\n    isAdaptive: Optional[bool]\n    # Append any files\n    files: Annotated[dict, lambda a, b: {**a, **b}]\ndef classify_question(state: State):\n    input_state = MetadataState(\n        **{\n            \"question\": state[\"question\"],",
+        "detail": "code_generator.generator.gestalt_generator",
+        "documentation": {}
+    },
+    {
+        "label": "classify_question",
+        "kind": 2,
+        "importPath": "code_generator.generator.gestalt_generator",
+        "description": "code_generator.generator.gestalt_generator",
+        "peekOfCode": "def classify_question(state: State):\n    input_state = MetadataState(\n        **{\n            \"question\": state[\"question\"],\n            \"metadata\": None,\n            \"isAdaptive\": state[\"isAdaptive\"],\n        }\n    )\n    result = question_metadata_graph.invoke(input_state, config)  # type: ignore\n    result = MetadataState.model_validate(result)",
+        "detail": "code_generator.generator.gestalt_generator",
+        "documentation": {}
+    },
+    {
+        "label": "generate_question_html",
+        "kind": 2,
+        "importPath": "code_generator.generator.gestalt_generator",
+        "description": "code_generator.generator.gestalt_generator",
+        "peekOfCode": "def generate_question_html(state: State):\n    metadata = state[\"metadata\"]\n    assert metadata\n    input_state: QState = {\n        \"question\": state[\"question\"],\n        \"isAdaptive\": state[\"isAdaptive\"] if state[\"isAdaptive\"] else False,\n        \"question_html\": None,\n        \"retrieved_documents\": [],\n        \"formatted_examples\": \"\",\n    }",
+        "detail": "code_generator.generator.gestalt_generator",
+        "documentation": {}
+    },
+    {
+        "label": "generate_solution_html",
+        "kind": 2,
+        "importPath": "code_generator.generator.gestalt_generator",
+        "description": "code_generator.generator.gestalt_generator",
+        "peekOfCode": "def generate_solution_html(state: State):\n    metadata = state[\"metadata\"]\n    assert metadata\n    input_state: SolutionState = {\n        \"question\": state[\"question\"],\n        \"isAdaptive\": state[\"isAdaptive\"] if state[\"isAdaptive\"] else False,\n        \"solution_html\": None,\n        \"retrieved_documents\": [],\n        \"formatted_examples\": \"\",\n        \"server_file\": None,",
+        "detail": "code_generator.generator.gestalt_generator",
+        "documentation": {}
+    },
+    {
+        "label": "generate_server_js",
+        "kind": 2,
+        "importPath": "code_generator.generator.gestalt_generator",
+        "description": "code_generator.generator.gestalt_generator",
+        "peekOfCode": "def generate_server_js(state: State):\n    metadata = state[\"metadata\"]\n    assert metadata\n    input_state: JSState = {\n        \"question\": state[\"question\"],\n        \"isAdaptive\": state[\"isAdaptive\"] if state[\"isAdaptive\"] else False,\n        \"server_js\": None,\n        \"retrieved_documents\": [],\n        \"formatted_examples\": \"\",\n    }",
+        "detail": "code_generator.generator.gestalt_generator",
+        "documentation": {}
+    },
+    {
+        "label": "generate_server_py",
+        "kind": 2,
+        "importPath": "code_generator.generator.gestalt_generator",
+        "description": "code_generator.generator.gestalt_generator",
+        "peekOfCode": "def generate_server_py(state: State):\n    metadata = state[\"metadata\"]\n    assert metadata\n    input_state: PyState = {\n        \"question\": state[\"question\"],\n        \"isAdaptive\": state[\"isAdaptive\"] if state[\"isAdaptive\"] else False,\n        \"server_py\": None,\n        \"retrieved_documents\": [],\n        \"formatted_examples\": \"\",\n    }",
+        "detail": "code_generator.generator.gestalt_generator",
+        "documentation": {}
+    },
+    {
+        "label": "generate_info_json",
+        "kind": 2,
+        "importPath": "code_generator.generator.gestalt_generator",
+        "description": "code_generator.generator.gestalt_generator",
+        "peekOfCode": "def generate_info_json(state: State):\n    metadata = state[\"metadata\"]\n    assert metadata\n    info_metadata = metadata.model_dump()\n    info_metadata[\"ai_generated\"] = True\n    if state[\"isAdaptive\"]:\n        info_metadata[\"languages\"] = [\"javascript\", \"python\"]\n        info_metadata[\"isAdaptive\"] = True\n    else:\n        info_metadata[\"languages\"] = []",
+        "detail": "code_generator.generator.gestalt_generator",
+        "documentation": {}
+    },
+    {
+        "label": "router",
+        "kind": 2,
+        "importPath": "code_generator.generator.gestalt_generator",
+        "description": "code_generator.generator.gestalt_generator",
+        "peekOfCode": "def router(\n    state: State,\n) -> Sequence[\n    Literal[\"generate_solution_html\", \"generate_server_js\", \"generate_server_py\"]\n]:\n    metadata = state[\"metadata\"]\n    assert metadata\n    if state[\"isAdaptive\"]:\n        return [\"generate_server_py\", \"generate_server_js\", \"generate_solution_html\"]\n    else:",
+        "detail": "code_generator.generator.gestalt_generator",
+        "documentation": {}
+    },
+    {
+        "label": "graph",
+        "kind": 5,
+        "importPath": "code_generator.generator.gestalt_generator",
+        "description": "code_generator.generator.gestalt_generator",
+        "peekOfCode": "graph = StateGraph(State)\ngraph.add_node(\"classify_question\", classify_question)\ngraph.add_node(\"generate_question_html\", generate_question_html)\ngraph.add_node(\"generate_solution_html\", generate_solution_html)\ngraph.add_node(\"generate_server_js\", generate_server_js)\ngraph.add_node(\"generate_server_py\", generate_server_py)\ngraph.add_node(\"generate_info_json\", generate_info_json)\ngraph.add_edge(START, \"classify_question\")\ngraph.add_edge(\"classify_question\", \"generate_question_html\")\n# Add the path mapping here",
+        "detail": "code_generator.generator.gestalt_generator",
+        "documentation": {}
+    },
+    {
+        "label": "app",
+        "kind": 5,
+        "importPath": "code_generator.generator.gestalt_generator",
+        "description": "code_generator.generator.gestalt_generator",
+        "peekOfCode": "app = graph.compile()\nif __name__ == \"__main__\":\n    config = {\"configurable\": {\"thread_id\": \"customer_123\"}}\n    question = Question(\n        question_text=\"A car is traveling along a straight rode at a constant speed of 100mph for 5 hours calculate the total distance traveled\",\n        solution_guide=None,\n        final_answer=None,\n        question_html=\"\",\n    )\n    input_state: State = {",
+        "detail": "code_generator.generator.gestalt_generator",
+        "documentation": {}
+    },
+    {
+        "label": "parse_image",
+        "kind": 2,
+        "importPath": "code_generator.graphs.image_generation",
+        "description": "code_generator.graphs.image_generation",
+        "peekOfCode": "def parse_image(response: AIMessage | dict):\n    if isinstance(response, dict):\n        response = AIMessage(**response)\n    for c in response.content:\n        ctype = None\n        if isinstance(c, dict):\n            ctype = c.get(\"type\", None)\n            if ctype == \"image_url\":\n                image_url = c.get(\"image_url\", {}).get(\"url\", None)\n                if image_url:",
+        "detail": "code_generator.graphs.image_generation",
+        "documentation": {}
+    },
+    {
+        "label": "save_base64_image",
+        "kind": 2,
+        "importPath": "code_generator.graphs.image_generation",
+        "description": "code_generator.graphs.image_generation",
+        "peekOfCode": "def save_base64_image(\n    base64_string: str,\n    output_dir: str | Path,\n    filename: str | None = None,\n) -> Path:\n    \"\"\"\n    Saves a base64 image to disk.\n    Supports:\n    - raw base64 strings\n    - data URLs like:",
+        "detail": "code_generator.graphs.image_generation",
+        "documentation": {}
+    },
+    {
+        "label": "image_generation_model",
+        "kind": 5,
+        "importPath": "code_generator.graphs.image_generation",
+        "description": "code_generator.graphs.image_generation",
+        "peekOfCode": "image_generation_model = init_chat_model(\n    model=\"gemini-2.5-flash\",\n    model_provider=\"google_genai\",\n)\nresponse = image_generation_model.invoke(\"Generate an image of a cat\")\nresponse = json.loads(Path(\"./image_data.json\").read_text())\ndef parse_image(response: AIMessage | dict):\n    if isinstance(response, dict):\n        response = AIMessage(**response)\n    for c in response.content:",
+        "detail": "code_generator.graphs.image_generation",
+        "documentation": {}
+    },
+    {
+        "label": "response",
+        "kind": 5,
+        "importPath": "code_generator.graphs.image_generation",
+        "description": "code_generator.graphs.image_generation",
+        "peekOfCode": "response = image_generation_model.invoke(\"Generate an image of a cat\")\nresponse = json.loads(Path(\"./image_data.json\").read_text())\ndef parse_image(response: AIMessage | dict):\n    if isinstance(response, dict):\n        response = AIMessage(**response)\n    for c in response.content:\n        ctype = None\n        if isinstance(c, dict):\n            ctype = c.get(\"type\", None)\n            if ctype == \"image_url\":",
+        "detail": "code_generator.graphs.image_generation",
+        "documentation": {}
+    },
+    {
+        "label": "response",
+        "kind": 5,
+        "importPath": "code_generator.graphs.image_generation",
+        "description": "code_generator.graphs.image_generation",
+        "peekOfCode": "response = json.loads(Path(\"./image_data.json\").read_text())\ndef parse_image(response: AIMessage | dict):\n    if isinstance(response, dict):\n        response = AIMessage(**response)\n    for c in response.content:\n        ctype = None\n        if isinstance(c, dict):\n            ctype = c.get(\"type\", None)\n            if ctype == \"image_url\":\n                image_url = c.get(\"image_url\", {}).get(\"url\", None)",
+        "detail": "code_generator.graphs.image_generation",
+        "documentation": {}
+    },
+    {
+        "label": "image_url",
+        "kind": 5,
+        "importPath": "code_generator.graphs.image_generation",
+        "description": "code_generator.graphs.image_generation",
+        "peekOfCode": "image_url = parse_image(response)\ndef save_base64_image(\n    base64_string: str,\n    output_dir: str | Path,\n    filename: str | None = None,\n) -> Path:\n    \"\"\"\n    Saves a base64 image to disk.\n    Supports:\n    - raw base64 strings",
+        "detail": "code_generator.graphs.image_generation",
+        "documentation": {}
+    },
+    {
+        "label": "State",
+        "kind": 6,
+        "importPath": "code_generator.graphs.question_html_graph",
+        "description": "code_generator.graphs.question_html_graph",
+        "peekOfCode": "class State(TypedDict):\n    question: Question\n    isAdaptive: bool\n    question_html: str | None\n    retrieved_documents: Annotated[List[Document], operator.add]\n    formatted_examples: str\ndef retrieve_examples(state: State) -> Command[Literal[\"generate_code\"]]:\n    question_text = state[\"question\"].question_text\n    filter = {\n        \"isAdaptive\": state[\"isAdaptive\"],",
+        "detail": "code_generator.graphs.question_html_graph",
+        "documentation": {}
+    },
+    {
+        "label": "retrieve_examples",
+        "kind": 2,
+        "importPath": "code_generator.graphs.question_html_graph",
+        "description": "code_generator.graphs.question_html_graph",
+        "peekOfCode": "def retrieve_examples(state: State) -> Command[Literal[\"generate_code\"]]:\n    question_text = state[\"question\"].question_text\n    filter = {\n        \"isAdaptive\": state[\"isAdaptive\"],\n        \"input_col\": \"question\",\n        \"output_col\": \"question.html\",\n        \"output_is_nan\": False,\n    }\n    results = vector_store.similarity_search(\n        question_text,",
+        "detail": "code_generator.graphs.question_html_graph",
+        "documentation": {}
+    },
+    {
+        "label": "generate_code",
+        "kind": 2,
+        "importPath": "code_generator.graphs.question_html_graph",
+        "description": "code_generator.graphs.question_html_graph",
+        "peekOfCode": "def generate_code(state: State):\n    question_text = state[\"question\"].question_text\n    examples = state[\"formatted_examples\"]\n    prompt = resolve_prompt(\"question_html_graph_prompt\")\n    prompt += f\"\"\"\n    question : {question_text}\n    examples: {examples}\n    \"\"\"\n    structured_model = model.with_structured_output(CodeResponse)\n    question_html = structured_model.invoke(prompt)",
+        "detail": "code_generator.graphs.question_html_graph",
+        "documentation": {}
+    },
+    {
+        "label": "workflow",
+        "kind": 5,
+        "importPath": "code_generator.graphs.question_html_graph",
+        "description": "code_generator.graphs.question_html_graph",
+        "peekOfCode": "workflow = StateGraph(State)\n# Define Nodes\nworkflow.add_node(\"retrieve_examples\", retrieve_examples)\nworkflow.add_node(\"generate_code\", generate_code)\n# Connect\nworkflow.add_edge(START, \"retrieve_examples\")\nworkflow.add_edge(\"retrieve_examples\", END)\napp = workflow.compile()\nif __name__ == \"__main__\":\n    question = Question(",
+        "detail": "code_generator.graphs.question_html_graph",
+        "documentation": {}
+    },
+    {
+        "label": "app",
+        "kind": 5,
+        "importPath": "code_generator.graphs.question_html_graph",
+        "description": "code_generator.graphs.question_html_graph",
+        "peekOfCode": "app = workflow.compile()\nif __name__ == \"__main__\":\n    question = Question(\n        question_text=\"A car is traveling along a straight rode at a constant speed of 100mph for 5 hours calculate the total distance traveled\",\n        solution_guide=None,\n        final_answer=None,\n        question_html=\"\",\n    )\n    input_state: State = {\n        \"question\": question,",
+        "detail": "code_generator.graphs.question_html_graph",
+        "documentation": {}
+    },
+    {
+        "label": "QuestionMetaData",
+        "kind": 6,
+        "importPath": "code_generator.graphs.question_metadata_graph",
+        "description": "code_generator.graphs.question_metadata_graph",
+        "peekOfCode": "class QuestionMetaData(BaseModel):\n    title: str = Field(..., description=\"A concise title summarizing the question\")\n    qTypes: List[QuestionTypes] = []\n    topics: List[str] = Field(\n        default=[],\n        description=\"A list of comma seperated values for the topics that represents the question properly\",\n    )\n    isAdaptive: bool\nclass State(BaseModel):\n    question: Question",
+        "detail": "code_generator.graphs.question_metadata_graph",
+        "documentation": {}
+    },
+    {
+        "label": "State",
+        "kind": 6,
+        "importPath": "code_generator.graphs.question_metadata_graph",
+        "description": "code_generator.graphs.question_metadata_graph",
+        "peekOfCode": "class State(BaseModel):\n    question: Question\n    metadata: QuestionMetaData | None = Field(\n        default=None,\n        description=\"The metadata to generate\",\n    )\n    isAdaptive: bool | None = Field(\n        default=None,\n        description=\"Whether the question is adaptive or not. If the None is passed it will auto generate during metadata generation. \",\n    )",
+        "detail": "code_generator.graphs.question_metadata_graph",
+        "documentation": {}
+    },
+    {
+        "label": "generate_question_metadata",
+        "kind": 2,
+        "importPath": "code_generator.graphs.question_metadata_graph",
+        "description": "code_generator.graphs.question_metadata_graph",
+        "peekOfCode": "def generate_question_metadata(state: State):\n    question_text = state.question.question_text\n    structured_model = model.with_structured_output(QuestionMetaData)\n    prompt = resolve_prompt(\"question_metadata\")\n    prompt += f\"question: {question_text}\"\n    result = structured_model.invoke(prompt)\n    metadata = QuestionMetaData.model_validate(result)\n    # Override\n    if state.isAdaptive is not None:\n        metadata.isAdaptive = state.isAdaptive",
+        "detail": "code_generator.graphs.question_metadata_graph",
+        "documentation": {}
+    },
+    {
+        "label": "workflow",
+        "kind": 5,
+        "importPath": "code_generator.graphs.question_metadata_graph",
+        "description": "code_generator.graphs.question_metadata_graph",
+        "peekOfCode": "workflow = StateGraph(State)\n# Define Nodes\nworkflow.add_node(\"generate_question_metadata\", generate_question_metadata)\n# Connect\nworkflow.add_edge(START, \"generate_question_metadata\")\nworkflow.add_edge(\"generate_question_metadata\", END)\napp = workflow.compile()\nif __name__ == \"__main__\":\n    question = Question(\n        question_text=\"A car is traveling along a straight rode at a constant speed of 100mph for 5 hours calculate the total distance traveled\",",
+        "detail": "code_generator.graphs.question_metadata_graph",
+        "documentation": {}
+    },
+    {
+        "label": "app",
+        "kind": 5,
+        "importPath": "code_generator.graphs.question_metadata_graph",
+        "description": "code_generator.graphs.question_metadata_graph",
+        "peekOfCode": "app = workflow.compile()\nif __name__ == \"__main__\":\n    question = Question(\n        question_text=\"A car is traveling along a straight rode at a constant speed of 100mph for 5 hours calculate the total distance traveled\",\n        solution_guide=None,\n        final_answer=None,\n        question_html=\"\",\n    )\n    input_state = State(question=question)\n    print(input_state)",
+        "detail": "code_generator.graphs.question_metadata_graph",
+        "documentation": {}
+    },
+    {
+        "label": "State",
+        "kind": 6,
+        "importPath": "code_generator.graphs.server_js_graph",
+        "description": "code_generator.graphs.server_js_graph",
+        "peekOfCode": "class State(TypedDict):\n    question: Question\n    isAdaptive: bool\n    server_js: str | None\n    retrieved_documents: Annotated[List[Document], operator.add]\n    formatted_examples: str\ndef retrieve_examples(state: State) -> Command[Literal[\"generate_code\"]]:\n    question_html = state[\"question\"].question_html\n    if not question_html:\n        question_html = state[\"question\"].question_text",
+        "detail": "code_generator.graphs.server_js_graph",
+        "documentation": {}
+    },
+    {
+        "label": "retrieve_examples",
+        "kind": 2,
+        "importPath": "code_generator.graphs.server_js_graph",
+        "description": "code_generator.graphs.server_js_graph",
+        "peekOfCode": "def retrieve_examples(state: State) -> Command[Literal[\"generate_code\"]]:\n    question_html = state[\"question\"].question_html\n    if not question_html:\n        question_html = state[\"question\"].question_text\n    filter = {\n        \"isAdaptive\": state[\"isAdaptive\"],\n        \"input_col\": \"question.html\",\n        \"output_col\": \"server.js\",\n        \"output_is_nan\": False,\n    }",
+        "detail": "code_generator.graphs.server_js_graph",
+        "documentation": {}
+    },
+    {
+        "label": "generate_code",
+        "kind": 2,
+        "importPath": "code_generator.graphs.server_js_graph",
+        "description": "code_generator.graphs.server_js_graph",
+        "peekOfCode": "def generate_code(state: State):\n    solution = state[\"question\"].solution_guide\n    examples = state[\"formatted_examples\"]\n    question_html = state[\"question\"].question_html\n    if not question_html:\n        question_html = state[\"question\"].question_text\n    prompt = resolve_prompt(\"server_js_graph_prompt\")\n    prompt += (\n        f\"\"\"question html {question_html} examples: {examples} solution: {solution}\"\"\"\n    )",
+        "detail": "code_generator.graphs.server_js_graph",
+        "documentation": {}
+    },
+    {
+        "label": "workflow",
+        "kind": 5,
+        "importPath": "code_generator.graphs.server_js_graph",
+        "description": "code_generator.graphs.server_js_graph",
+        "peekOfCode": "workflow = StateGraph(State)\n# Define Nodes\nworkflow.add_node(\"retrieve_examples\", retrieve_examples)\nworkflow.add_node(\"generate_code\", generate_code)\n# Connect\n# Connect\nworkflow.add_edge(START, \"retrieve_examples\")\nworkflow.add_edge(\"generate_code\", END)\n# memory = MemorySaver()\n# app = workflow.compile(checkpointer=memory)",
+        "detail": "code_generator.graphs.server_js_graph",
+        "documentation": {}
+    },
+    {
+        "label": "app",
+        "kind": 5,
+        "importPath": "code_generator.graphs.server_js_graph",
+        "description": "code_generator.graphs.server_js_graph",
+        "peekOfCode": "app = workflow.compile()\nif __name__ == \"__main__\":\n    config = {\"configurable\": {\"thread_id\": \"customer_123\"}}\n    question = Question(\n        question_text=\"A car is traveling along a straight rode at a constant speed of 100mph for 5 hours calculate the total distance traveled\",\n        solution_guide=None,\n        final_answer=None,\n        question_html=\"\",\n    )\n    input_state: State = {",
+        "detail": "code_generator.graphs.server_js_graph",
+        "documentation": {}
+    },
+    {
+        "label": "State",
+        "kind": 6,
+        "importPath": "code_generator.graphs.server_py_graph",
+        "description": "code_generator.graphs.server_py_graph",
+        "peekOfCode": "class State(TypedDict):\n    question: Question\n    isAdaptive: bool\n    server_py: str | None\n    retrieved_documents: Annotated[List[Document], operator.add]\n    formatted_examples: str\ndef retrieve_examples(state: State) -> Command[Literal[\"generate_code\"]]:\n    question_html = state[\"question\"].question_html\n    if not question_html:\n        question_html = state[\"question\"].question_text",
+        "detail": "code_generator.graphs.server_py_graph",
+        "documentation": {}
+    },
+    {
+        "label": "retrieve_examples",
+        "kind": 2,
+        "importPath": "code_generator.graphs.server_py_graph",
+        "description": "code_generator.graphs.server_py_graph",
+        "peekOfCode": "def retrieve_examples(state: State) -> Command[Literal[\"generate_code\"]]:\n    question_html = state[\"question\"].question_html\n    if not question_html:\n        question_html = state[\"question\"].question_text\n    filter = {\n        \"isAdaptive\": state[\"isAdaptive\"],\n        \"input_col\": \"question.html\",\n        \"output_col\": \"server.py\",\n        \"output_is_nan\": False,\n    }",
+        "detail": "code_generator.graphs.server_py_graph",
+        "documentation": {}
+    },
+    {
+        "label": "generate_code",
+        "kind": 2,
+        "importPath": "code_generator.graphs.server_py_graph",
+        "description": "code_generator.graphs.server_py_graph",
+        "peekOfCode": "def generate_code(state: State):\n    solution = state[\"question\"].solution_guide\n    examples = state[\"formatted_examples\"]\n    question_html = state[\"question\"].question_html\n    if not question_html:\n        question_html = state[\"question\"].question_text\n    prompt = resolve_prompt(\"server_py_graph_prompt\")\n    prompt += (\n        f\"\"\"question html {question_html} examples: {examples} solution: {solution}\"\"\"\n    )",
+        "detail": "code_generator.graphs.server_py_graph",
+        "documentation": {}
+    },
+    {
+        "label": "workflow",
+        "kind": 5,
+        "importPath": "code_generator.graphs.server_py_graph",
+        "description": "code_generator.graphs.server_py_graph",
+        "peekOfCode": "workflow = StateGraph(State)\nworkflow.add_node(\"retrieve_examples\", retrieve_examples)\nworkflow.add_node(\"generate_code\", generate_code)\nworkflow.add_edge(START, \"retrieve_examples\")\nworkflow.add_edge(\"generate_code\", END)\napp = workflow.compile()\nif __name__ == \"__main__\":\n    config = {\"configurable\": {\"thread_id\": \"customer_123\"}}\n    question = Question(\n        question_text=\"A car is traveling along a straight rode at a constant speed of 100mph for 5 hours calculate the total distance traveled\",",
+        "detail": "code_generator.graphs.server_py_graph",
+        "documentation": {}
+    },
+    {
+        "label": "app",
+        "kind": 5,
+        "importPath": "code_generator.graphs.server_py_graph",
+        "description": "code_generator.graphs.server_py_graph",
+        "peekOfCode": "app = workflow.compile()\nif __name__ == \"__main__\":\n    config = {\"configurable\": {\"thread_id\": \"customer_123\"}}\n    question = Question(\n        question_text=\"A car is traveling along a straight rode at a constant speed of 100mph for 5 hours calculate the total distance traveled\",\n        solution_guide=None,\n        final_answer=None,\n        question_html=\"\",\n    )\n    input_state: State = {",
+        "detail": "code_generator.graphs.server_py_graph",
+        "documentation": {}
+    },
+    {
+        "label": "State",
+        "kind": 6,
+        "importPath": "code_generator.graphs.solution_html_graph",
+        "description": "code_generator.graphs.solution_html_graph",
+        "peekOfCode": "class State(TypedDict):\n    question: Question\n    isAdaptive: bool\n    solution_html: str | None\n    server_file: str | None\n    retrieved_documents: Annotated[List[Document], operator.add]\n    formatted_examples: str\ndef retrieve_examples(state: State) -> Command[Literal[\"generate_code\"]]:\n    question_html = state[\"question\"].question_html\n    if not question_html:",
+        "detail": "code_generator.graphs.solution_html_graph",
+        "documentation": {}
+    },
+    {
+        "label": "retrieve_examples",
+        "kind": 2,
+        "importPath": "code_generator.graphs.solution_html_graph",
+        "description": "code_generator.graphs.solution_html_graph",
+        "peekOfCode": "def retrieve_examples(state: State) -> Command[Literal[\"generate_code\"]]:\n    question_html = state[\"question\"].question_html\n    if not question_html:\n        question_html = state[\"question\"].question_text\n    filter = {\n        \"isAdaptive\": state[\"isAdaptive\"],\n        \"input_col\": \"question.html\",\n        \"output_col\": \"solution.html\",\n        \"output_is_nan\": False,\n    }",
+        "detail": "code_generator.graphs.solution_html_graph",
+        "documentation": {}
+    },
+    {
+        "label": "generate_code",
+        "kind": 2,
+        "importPath": "code_generator.graphs.solution_html_graph",
+        "description": "code_generator.graphs.solution_html_graph",
+        "peekOfCode": "def generate_code(state: State):\n    question_html = state[\"question\"].question_html\n    if not question_html:\n        question_html = state[\"question\"].question_text\n    solution = state[\"question\"].solution_guide\n    examples = state[\"formatted_examples\"]\n    prompt = resolve_prompt(\"solution_html_graph_prompt\")\n    prompt += (\n        f\"\"\"question html {question_html} examples: {examples} solution: {solution}\"\"\"\n    )",
+        "detail": "code_generator.graphs.solution_html_graph",
+        "documentation": {}
+    },
+    {
+        "label": "workflow",
+        "kind": 5,
+        "importPath": "code_generator.graphs.solution_html_graph",
+        "description": "code_generator.graphs.solution_html_graph",
+        "peekOfCode": "workflow = StateGraph(State)\nworkflow.add_node(\"retrieve_examples\", retrieve_examples)\nworkflow.add_node(\"generate_code\", generate_code)\nworkflow.add_edge(START, \"retrieve_examples\")\nworkflow.add_edge(\"generate_code\", END)\napp = workflow.compile()\nif __name__ == \"__main__\":\n    question = Question(\n        question_text=\"A car is traveling along a straight rode at a constant speed of 100mph for 5 hours calculate the total distance traveled\",\n        solution_guide=None,",
+        "detail": "code_generator.graphs.solution_html_graph",
+        "documentation": {}
+    },
+    {
+        "label": "app",
+        "kind": 5,
+        "importPath": "code_generator.graphs.solution_html_graph",
+        "description": "code_generator.graphs.solution_html_graph",
+        "peekOfCode": "app = workflow.compile()\nif __name__ == \"__main__\":\n    question = Question(\n        question_text=\"A car is traveling along a straight rode at a constant speed of 100mph for 5 hours calculate the total distance traveled\",\n        solution_guide=None,\n        final_answer=None,\n        question_html=\"A car is traveling along a straight rode at a constant speed of 100mph for 5 hours calculate the total distance traveled\",\n    )\n    input_state: State = {\n        \"question\": question,",
+        "detail": "code_generator.graphs.solution_html_graph",
+        "documentation": {}
+    },
+    {
+        "label": "QuestionModuleDocumentLoader",
+        "kind": 6,
+        "importPath": "code_generator.vectorstore.document_loader",
+        "description": "code_generator.vectorstore.document_loader",
+        "peekOfCode": "class QuestionModuleDocumentLoader(BaseLoader):\n    def __init__(\n        self,\n        input_col: str,\n        output_col: str,\n        file_path: (\n            str | Path\n        ) = r\"src/code_generator/data/QuestionDataV2_06122025_classified.csv\",\n    ):\n        self.file_path = Path(file_path).resolve()",
+        "detail": "code_generator.vectorstore.document_loader",
+        "documentation": {}
+    },
+    {
+        "label": "settings",
+        "kind": 5,
+        "importPath": "code_generator.vectorstore.vectorstore",
+        "description": "code_generator.vectorstore.vectorstore",
+        "peekOfCode": "settings = get_settings()\nembeddings = GoogleGenerativeAIEmbeddings(model=settings.embedding_model)\nvector_store = AstraDBVectorStore(\n    collection_name=\"gestalt_module\",\n    embedding=embeddings,\n    api_endpoint=settings.ASTRA_DB_API_ENDPOINT,\n    token=settings.ASTRA_DB_APPLICATION_TOKEN,\n)\nif __name__ == \"__main__\":\n    print(\"Extracting Code Examples\")",
+        "detail": "code_generator.vectorstore.vectorstore",
+        "documentation": {}
+    },
+    {
+        "label": "embeddings",
+        "kind": 5,
+        "importPath": "code_generator.vectorstore.vectorstore",
+        "description": "code_generator.vectorstore.vectorstore",
+        "peekOfCode": "embeddings = GoogleGenerativeAIEmbeddings(model=settings.embedding_model)\nvector_store = AstraDBVectorStore(\n    collection_name=\"gestalt_module\",\n    embedding=embeddings,\n    api_endpoint=settings.ASTRA_DB_API_ENDPOINT,\n    token=settings.ASTRA_DB_APPLICATION_TOKEN,\n)\nif __name__ == \"__main__\":\n    print(\"Extracting Code Examples\")\n    example_pairs = [",
+        "detail": "code_generator.vectorstore.vectorstore",
+        "documentation": {}
+    },
+    {
+        "label": "vector_store",
+        "kind": 5,
+        "importPath": "code_generator.vectorstore.vectorstore",
+        "description": "code_generator.vectorstore.vectorstore",
+        "peekOfCode": "vector_store = AstraDBVectorStore(\n    collection_name=\"gestalt_module\",\n    embedding=embeddings,\n    api_endpoint=settings.ASTRA_DB_API_ENDPOINT,\n    token=settings.ASTRA_DB_APPLICATION_TOKEN,\n)\nif __name__ == \"__main__\":\n    print(\"Extracting Code Examples\")\n    example_pairs = [\n        (\"question\", \"question.html\"),",
+        "detail": "code_generator.vectorstore.vectorstore",
+        "documentation": {}
+    },
+    {
+        "label": "State",
+        "kind": 6,
+        "importPath": "code_validation.graph",
+        "description": "code_validation.graph",
+        "peekOfCode": "class State(TypedDict):\n    prompt: str\n    generated_code: str | None\n    validation_errors: Annotated[List[str], add]\n    # Amount of times going through generation\n    refinement_count: int\n    final_code: str | None\ndef generate_code(state: State) -> Command[Literal[\"validate_code\"]]:\n    \"\"\"Generate code with structured output schema.\"\"\"\n    refinement_context = \"\"",
+        "detail": "code_validation.graph",
+        "documentation": {}
+    },
+    {
+        "label": "generate_code",
+        "kind": 2,
+        "importPath": "code_validation.graph",
+        "description": "code_validation.graph",
+        "peekOfCode": "def generate_code(state: State) -> Command[Literal[\"validate_code\"]]:\n    \"\"\"Generate code with structured output schema.\"\"\"\n    refinement_context = \"\"\n    if state[\"refinement_count\"] > 0:\n        errors = \"\\n\".join(state[\"validation_errors\"])\n        refinement_context = f\"\\nFix these issues:\\n{errors}\"\n    prompt = f\"\"\"\n        You are given existing source code that needs refinement.\n        Your task is to MODIFY the provided code while:\n        - Preserving the original structure, control flow, and intent",
+        "detail": "code_validation.graph",
+        "documentation": {}
+    },
+    {
+        "label": "validate_code",
+        "kind": 2,
+        "importPath": "code_validation.graph",
+        "description": "code_validation.graph",
+        "peekOfCode": "def validate_code(state: State):\n    \"\"\"Validate generated code against criteria.\"\"\"\n    errors = []\n    user_prompt = state[\"prompt\"]\n    generated_code = state[\"generated_code\"]\n    validation_prompt = f\"\"\"\n    Review the following code to ensure it implements the user's requirement.\n    Check for:\n    1. Does it implement the requirement correctly?\n    2. Is error handling present?",
+        "detail": "code_validation.graph",
+        "documentation": {}
+    },
+    {
+        "label": "should_refine",
+        "kind": 2,
+        "importPath": "code_validation.graph",
+        "description": "code_validation.graph",
+        "peekOfCode": "def should_refine(state: State) -> Literal[\"accept\", \"generate_code\"]:\n    \"\"\"Decide whether to refine or accept code.\"\"\"\n    # Max refinements to prevent loops\n    if state[\"refinement_count\"] >= 3:\n        return \"accept\"\n    # No errors = accept\n    if not state[\"validation_errors\"]:\n        return \"accept\"\n    # Has errors = generate code again\n    return \"generate_code\"",
+        "detail": "code_validation.graph",
+        "documentation": {}
+    },
+    {
+        "label": "accept_code",
+        "kind": 2,
+        "importPath": "code_validation.graph",
+        "description": "code_validation.graph",
+        "peekOfCode": "def accept_code(state: State) -> Command:\n    \"\"\"Accept the code as final.\"\"\"\n    final_code = state[\"generated_code\"]\n    return Command(update={\"final_code\": final_code})\n# Create graph\nworkflow = StateGraph(State)\n# Add nodes\nworkflow.add_node(\"generate_code\", generate_code)\nworkflow.add_node(\"validate_code\", validate_code)\nworkflow.add_node(\"accept\", accept_code)",
+        "detail": "code_validation.graph",
+        "documentation": {}
+    },
+    {
+        "label": "workflow",
+        "kind": 5,
+        "importPath": "code_validation.graph",
+        "description": "code_validation.graph",
+        "peekOfCode": "workflow = StateGraph(State)\n# Add nodes\nworkflow.add_node(\"generate_code\", generate_code)\nworkflow.add_node(\"validate_code\", validate_code)\nworkflow.add_node(\"accept\", accept_code)\n# Add edges - START with generation, not validation\nworkflow.add_edge(START, \"validate_code\")\n# Conditional edge from should_refine\nworkflow.add_conditional_edges(\n    \"validate_code\",",
+        "detail": "code_validation.graph",
+        "documentation": {}
+    },
+    {
+        "label": "graph",
+        "kind": 5,
+        "importPath": "code_validation.graph",
+        "description": "code_validation.graph",
+        "peekOfCode": "graph = workflow.compile()\nif __name__ == \"__main__\":\n    folder_path = Path(\n        r\"src/ai_processing/code_generator/outputs/code_validation\"\n    ).resolve()\n    save_graph_visualization(graph, folder_path, \"code_validation.png\")\n    input_state: State = {\n        \"prompt\": \"Refactor this function to be more readable and ensure it handles division safely.\",\n        \"generated_code\": \"def compute(a,b): return a/b\",\n        \"validation_errors\": [],",
+        "detail": "code_validation.graph",
+        "documentation": {}
+    },
+    {
+        "label": "log_level",
+        "kind": 5,
+        "importPath": "core.logger",
+        "description": "core.logger",
+        "peekOfCode": "log_level = int(os.getenv(\"LOGLEVEL\", logging.INFO))\nlogger = logging.getLogger(__name__)\nlogger.setLevel(log_level)\nlogger.propagate = False\n# Formatiting\nformatter = logging.Formatter(\n    r\"%(asctime)s - %(levelname)-7s %(threadName)-12s [%(filename)s:%(lineno)s - %(funcName)s()] - %(message)s\"\n)\nif __name__ == \"__main__\":\n    logger.info(\"Info logging test\")",
+        "detail": "core.logger",
+        "documentation": {}
+    },
+    {
+        "label": "logger",
+        "kind": 5,
+        "importPath": "core.logger",
+        "description": "core.logger",
+        "peekOfCode": "logger = logging.getLogger(__name__)\nlogger.setLevel(log_level)\nlogger.propagate = False\n# Formatiting\nformatter = logging.Formatter(\n    r\"%(asctime)s - %(levelname)-7s %(threadName)-12s [%(filename)s:%(lineno)s - %(funcName)s()] - %(message)s\"\n)\nif __name__ == \"__main__\":\n    logger.info(\"Info logging test\")\n    logger.warning(\"Warning logging test\")",
+        "detail": "core.logger",
+        "documentation": {}
+    },
+    {
+        "label": "logger.propagate",
+        "kind": 5,
+        "importPath": "core.logger",
+        "description": "core.logger",
+        "peekOfCode": "logger.propagate = False\n# Formatiting\nformatter = logging.Formatter(\n    r\"%(asctime)s - %(levelname)-7s %(threadName)-12s [%(filename)s:%(lineno)s - %(funcName)s()] - %(message)s\"\n)\nif __name__ == \"__main__\":\n    logger.info(\"Info logging test\")\n    logger.warning(\"Warning logging test\")\n    logger.error(\"Error logging test\")\n    logger.exception(Exception(\"Exception logging test\"))",
+        "detail": "core.logger",
+        "documentation": {}
+    },
+    {
+        "label": "formatter",
+        "kind": 5,
+        "importPath": "core.logger",
+        "description": "core.logger",
+        "peekOfCode": "formatter = logging.Formatter(\n    r\"%(asctime)s - %(levelname)-7s %(threadName)-12s [%(filename)s:%(lineno)s - %(funcName)s()] - %(message)s\"\n)\nif __name__ == \"__main__\":\n    logger.info(\"Info logging test\")\n    logger.warning(\"Warning logging test\")\n    logger.error(\"Error logging test\")\n    logger.exception(Exception(\"Exception logging test\"))\n    logger.info(f\"This is the log level {log_level}\")",
+        "detail": "core.logger",
+        "documentation": {}
+    },
+    {
+        "label": "Settings",
+        "kind": 6,
+        "importPath": "core.settings",
+        "description": "core.settings",
+        "peekOfCode": "class Settings(BaseSettings):\n    # AI Settings\n    model: str = \"gemini-2.5-flash\"\n    embedding_model: str = \"gemini-embedding-001\"\n    google_api_key: str | None = None\n    # Vectordatabase\n    ASTRA_DB_API_ENDPOINT: str | None = None\n    ASTRA_DB_APPLICATION_TOKEN: str | None = None\n    env: ENV = \"dev\"\n    prompt_source: PROMPT_SOURCE = \"production\"",
+        "detail": "core.settings",
+        "documentation": {}
+    },
+    {
+        "label": "get_settings",
+        "kind": 2,
+        "importPath": "core.settings",
+        "description": "core.settings",
+        "peekOfCode": "def get_settings() -> Settings:\n    \"\"\"Return cached validated application settings.\"\"\"\n    return Settings()  # type: ignore\n@lru_cache\ndef get_settings_pretty_print() -> str:\n    \"\"\"Return a readable summary of key runtime settings.\"\"\"\n    settings = get_settings()\n    lines = [\n        \"=== Runtime Settings ===\",\n        f\"ENV: {settings.env}\",",
+        "detail": "core.settings",
+        "documentation": {}
+    },
+    {
+        "label": "get_settings_pretty_print",
+        "kind": 2,
+        "importPath": "core.settings",
+        "description": "core.settings",
+        "peekOfCode": "def get_settings_pretty_print() -> str:\n    \"\"\"Return a readable summary of key runtime settings.\"\"\"\n    settings = get_settings()\n    lines = [\n        \"=== Runtime Settings ===\",\n        f\"ENV: {settings.env}\",\n        f\"Base Model: {settings.model}\",\n        f\"Embedding Model: {settings.embedding_model}\",\n        f\"API Key set {(bool(settings.google_api_key))}\",\n    ]",
+        "detail": "core.settings",
+        "documentation": {}
+    },
+    {
+        "label": "ENV",
+        "kind": 5,
+        "importPath": "core.settings",
+        "description": "core.settings",
+        "peekOfCode": "ENV = Literal[\"dev\", \"production\", \"test\"]\nPROMPT_SOURCE = Literal[\"local\", \"production\"]\nclass Settings(BaseSettings):\n    # AI Settings\n    model: str = \"gemini-2.5-flash\"\n    embedding_model: str = \"gemini-embedding-001\"\n    google_api_key: str | None = None\n    # Vectordatabase\n    ASTRA_DB_API_ENDPOINT: str | None = None\n    ASTRA_DB_APPLICATION_TOKEN: str | None = None",
+        "detail": "core.settings",
+        "documentation": {}
+    },
+    {
+        "label": "PROMPT_SOURCE",
+        "kind": 5,
+        "importPath": "core.settings",
+        "description": "core.settings",
+        "peekOfCode": "PROMPT_SOURCE = Literal[\"local\", \"production\"]\nclass Settings(BaseSettings):\n    # AI Settings\n    model: str = \"gemini-2.5-flash\"\n    embedding_model: str = \"gemini-embedding-001\"\n    google_api_key: str | None = None\n    # Vectordatabase\n    ASTRA_DB_API_ENDPOINT: str | None = None\n    ASTRA_DB_APPLICATION_TOKEN: str | None = None\n    env: ENV = \"dev\"",
+        "detail": "core.settings",
+        "documentation": {}
+    },
+    {
+        "label": "image_url",
+        "kind": 5,
+        "importPath": "file_uploads.main",
+        "description": "file_uploads.main",
+        "peekOfCode": "image_url = \"https://api.nga.gov/iiif/a2e6da57-3cd1-4235-b20e-95dcaefed6c8/full/!800,800/0/default.jpg\"\nheaders = {\n    \"User-Agent\": \"Mozilla/5.0 (compatible; LangGraphBot/1.0;+https://your.site)\"\n}\nresp = httpx.get(image_url, headers=headers)\nresp.raise_for_status()\nmime_type = resp.headers.get(\"Content-Type\")  # ← IMPORTANT\nimage_bytes = resp.content\nimage_data = base64.b64encode(image_bytes).decode(\"utf-8\")\nimage_payload = [",
+        "detail": "file_uploads.main",
+        "documentation": {}
+    },
+    {
+        "label": "headers",
+        "kind": 5,
+        "importPath": "file_uploads.main",
+        "description": "file_uploads.main",
+        "peekOfCode": "headers = {\n    \"User-Agent\": \"Mozilla/5.0 (compatible; LangGraphBot/1.0;+https://your.site)\"\n}\nresp = httpx.get(image_url, headers=headers)\nresp.raise_for_status()\nmime_type = resp.headers.get(\"Content-Type\")  # ← IMPORTANT\nimage_bytes = resp.content\nimage_data = base64.b64encode(image_bytes).decode(\"utf-8\")\nimage_payload = [\n    {",
+        "detail": "file_uploads.main",
+        "documentation": {}
+    },
+    {
+        "label": "resp",
+        "kind": 5,
+        "importPath": "file_uploads.main",
+        "description": "file_uploads.main",
+        "peekOfCode": "resp = httpx.get(image_url, headers=headers)\nresp.raise_for_status()\nmime_type = resp.headers.get(\"Content-Type\")  # ← IMPORTANT\nimage_bytes = resp.content\nimage_data = base64.b64encode(image_bytes).decode(\"utf-8\")\nimage_payload = [\n    {\n        \"type\": \"image_url\",\n        \"image_url\": {\"url\": f\"data:{mime_type};base64,{image_data}\"},\n    }",
+        "detail": "file_uploads.main",
+        "documentation": {}
+    },
+    {
+        "label": "mime_type",
+        "kind": 5,
+        "importPath": "file_uploads.main",
+        "description": "file_uploads.main",
+        "peekOfCode": "mime_type = resp.headers.get(\"Content-Type\")  # ← IMPORTANT\nimage_bytes = resp.content\nimage_data = base64.b64encode(image_bytes).decode(\"utf-8\")\nimage_payload = [\n    {\n        \"type\": \"image_url\",\n        \"image_url\": {\"url\": f\"data:{mime_type};base64,{image_data}\"},\n    }\n]\nmessage = {",
+        "detail": "file_uploads.main",
+        "documentation": {}
+    },
+    {
+        "label": "image_bytes",
+        "kind": 5,
+        "importPath": "file_uploads.main",
+        "description": "file_uploads.main",
+        "peekOfCode": "image_bytes = resp.content\nimage_data = base64.b64encode(image_bytes).decode(\"utf-8\")\nimage_payload = [\n    {\n        \"type\": \"image_url\",\n        \"image_url\": {\"url\": f\"data:{mime_type};base64,{image_data}\"},\n    }\n]\nmessage = {\n    \"role\": \"user\",",
+        "detail": "file_uploads.main",
+        "documentation": {}
+    },
+    {
+        "label": "image_data",
+        "kind": 5,
+        "importPath": "file_uploads.main",
+        "description": "file_uploads.main",
+        "peekOfCode": "image_data = base64.b64encode(image_bytes).decode(\"utf-8\")\nimage_payload = [\n    {\n        \"type\": \"image_url\",\n        \"image_url\": {\"url\": f\"data:{mime_type};base64,{image_data}\"},\n    }\n]\nmessage = {\n    \"role\": \"user\",\n    \"content\": [{\"type\": \"text\", \"text\": \"What is in the image\"}, *image_payload],",
+        "detail": "file_uploads.main",
+        "documentation": {}
+    },
+    {
+        "label": "image_payload",
+        "kind": 5,
+        "importPath": "file_uploads.main",
+        "description": "file_uploads.main",
+        "peekOfCode": "image_payload = [\n    {\n        \"type\": \"image_url\",\n        \"image_url\": {\"url\": f\"data:{mime_type};base64,{image_data}\"},\n    }\n]\nmessage = {\n    \"role\": \"user\",\n    \"content\": [{\"type\": \"text\", \"text\": \"What is in the image\"}, *image_payload],\n}",
+        "detail": "file_uploads.main",
+        "documentation": {}
+    },
+    {
+        "label": "message",
+        "kind": 5,
+        "importPath": "file_uploads.main",
+        "description": "file_uploads.main",
+        "peekOfCode": "message = {\n    \"role\": \"user\",\n    \"content\": [{\"type\": \"text\", \"text\": \"What is in the image\"}, *image_payload],\n}\nmodel = ChatOpenAI(model=\"gpt-4.1-mini\")\nresponse = model.invoke([message])\nprint(response.content)",
+        "detail": "file_uploads.main",
+        "documentation": {}
+    },
+    {
+        "label": "model",
+        "kind": 5,
+        "importPath": "file_uploads.main",
+        "description": "file_uploads.main",
+        "peekOfCode": "model = ChatOpenAI(model=\"gpt-4.1-mini\")\nresponse = model.invoke([message])\nprint(response.content)",
+        "detail": "file_uploads.main",
+        "documentation": {}
+    },
+    {
+        "label": "response",
+        "kind": 5,
+        "importPath": "file_uploads.main",
+        "description": "file_uploads.main",
+        "peekOfCode": "response = model.invoke([message])\nprint(response.content)",
+        "detail": "file_uploads.main",
+        "documentation": {}
+    },
+    {
+        "label": "Question",
+        "kind": 6,
+        "importPath": "models.question",
+        "description": "models.question",
+        "peekOfCode": "class Question(BaseModel):\n    question_text: str\n    solution_guide: str | None\n    final_answer: str | None\n    question_html: str\nclass CodeResponse(BaseModel):\n    \"\"\"Output schema from the LLM for code generation.\"\"\"\n    code: str = Field(..., description=\"The generated code. Only return the code.\")\nclass ValidationResult(BaseModel):\n    is_valid: bool = Field(",
+        "detail": "models.question",
+        "documentation": {}
+    },
+    {
+        "label": "CodeResponse",
+        "kind": 6,
+        "importPath": "models.question",
+        "description": "models.question",
+        "peekOfCode": "class CodeResponse(BaseModel):\n    \"\"\"Output schema from the LLM for code generation.\"\"\"\n    code: str = Field(..., description=\"The generated code. Only return the code.\")\nclass ValidationResult(BaseModel):\n    is_valid: bool = Field(\n        ..., description=\"Is the code valid? based on the requirements\"\n    )\n    errors: list[str] = Field(\n        default_factory=list, description=\"List of validation issues\"\n    )",
+        "detail": "models.question",
+        "documentation": {}
+    },
+    {
+        "label": "ValidationResult",
+        "kind": 6,
+        "importPath": "models.question",
+        "description": "models.question",
+        "peekOfCode": "class ValidationResult(BaseModel):\n    is_valid: bool = Field(\n        ..., description=\"Is the code valid? based on the requirements\"\n    )\n    errors: list[str] = Field(\n        default_factory=list, description=\"List of validation issues\"\n    )\n    severity: Literal[\"pass\", \"warning\", \"critical\"] = Field(...)",
+        "detail": "models.question",
+        "documentation": {}
+    },
+    {
+        "label": "QuestionTypes",
+        "kind": 5,
+        "importPath": "models.question",
+        "description": "models.question",
+        "peekOfCode": "QuestionTypes = Literal[\n    \"conceptual\", \"computational\", \"derivation\", \"analysis\", \"design\"\n]\nclass Question(BaseModel):\n    question_text: str\n    solution_guide: str | None\n    final_answer: str | None\n    question_html: str\nclass CodeResponse(BaseModel):\n    \"\"\"Output schema from the LLM for code generation.\"\"\"",
+        "detail": "models.question",
+        "documentation": {}
+    },
+    {
+        "label": "fetch_all_prompts",
+        "kind": 2,
+        "importPath": "prompts.load_prompts",
+        "description": "prompts.load_prompts",
+        "peekOfCode": "def fetch_all_prompts():\n    \"\"\"Fetch all configured prompts from LangSmith and save them locally.\"\"\"\n    for p in VALID_PROMPTS:\n        text = \"\"\n        try:\n            prompt = client.pull_prompt(p)\n            text = extract_langsmith_prompt(prompt)\n        except Exception as e:\n            logger.warning(f\"Failed to get prompt {p} Error: {e}\\n Double check name\")\n            continue",
+        "detail": "prompts.load_prompts",
+        "documentation": {}
+    },
+    {
+        "label": "load_local_prompt",
+        "kind": 2,
+        "importPath": "prompts.load_prompts",
+        "description": "prompts.load_prompts",
+        "peekOfCode": "def load_local_prompt(prompt_name: str) -> str:\n    \"\"\"Load a prompt file from the local prompts directory.\"\"\"\n    path = Path(\"src/prompts\") / prompt_name\n    if not path.exists():\n        raise ValueError(f\"Prompt path {path} does not exist\")\n    content = path.read_text(encoding=\"utf-8\")\n    if content is None:\n        logger.warning(\n            \"Warning Prompt is empty. Unexpected behavior with agent will occur\"\n        )",
+        "detail": "prompts.load_prompts",
+        "documentation": {}
+    },
+    {
+        "label": "extract_langsmith_prompt",
+        "kind": 2,
+        "importPath": "prompts.load_prompts",
+        "description": "prompts.load_prompts",
+        "peekOfCode": "def extract_langsmith_prompt(base: Any) -> str:\n    \"\"\"Extract the system prompt text from a LangSmith chat prompt template.\"\"\"\n    try:\n        if not isinstance(base, ChatPromptTemplate):\n            raise ValueError(\"expected a ChatPromptTemplate\")\n        if not base.messages:\n            raise ValueError(\"ChatPromptTemplate.messages is empty\")\n        messages = base.messages[0]\n        if (\n            hasattr(messages, \"prompt\")",
+        "detail": "prompts.load_prompts",
+        "documentation": {}
+    },
+    {
+        "label": "resolve_prompt",
+        "kind": 2,
+        "importPath": "prompts.load_prompts",
+        "description": "prompts.load_prompts",
+        "peekOfCode": "def resolve_prompt(prompt_identifier: str) -> str:\n    try:\n        if settings.prompt_source == \"local\":\n            prompt = load_local_prompt(f\"src/prompts/{prompt_identifier}.md\")\n        else:\n            prompt = extract_langsmith_prompt(client.pull_prompt(prompt_identifier))\n        return prompt\n    except Exception as e:\n        raise ValueError(f\"Could not resolve prompt {e}\")\nif __name__ == \"__main__\":",
+        "detail": "prompts.load_prompts",
+        "documentation": {}
+    },
+    {
+        "label": "client",
+        "kind": 5,
+        "importPath": "prompts.load_prompts",
+        "description": "prompts.load_prompts",
+        "peekOfCode": "client = Client()\nsettings = get_settings()\nVALID_PROMPTS = [\n    \"question_html_graph_prompt\",\n    \"question_metadata\",\n    \"server_js_graph_prompt\",\n    \"server_py_graph_prompt\",\n    \"solution_html_graph_prompt\",\n]\nBASE_PATH = Path(\"./src/prompts\")",
+        "detail": "prompts.load_prompts",
+        "documentation": {}
+    },
+    {
+        "label": "settings",
+        "kind": 5,
+        "importPath": "prompts.load_prompts",
+        "description": "prompts.load_prompts",
+        "peekOfCode": "settings = get_settings()\nVALID_PROMPTS = [\n    \"question_html_graph_prompt\",\n    \"question_metadata\",\n    \"server_js_graph_prompt\",\n    \"server_py_graph_prompt\",\n    \"solution_html_graph_prompt\",\n]\nBASE_PATH = Path(\"./src/prompts\")\ndef fetch_all_prompts():",
+        "detail": "prompts.load_prompts",
+        "documentation": {}
+    },
+    {
+        "label": "VALID_PROMPTS",
+        "kind": 5,
+        "importPath": "prompts.load_prompts",
+        "description": "prompts.load_prompts",
+        "peekOfCode": "VALID_PROMPTS = [\n    \"question_html_graph_prompt\",\n    \"question_metadata\",\n    \"server_js_graph_prompt\",\n    \"server_py_graph_prompt\",\n    \"solution_html_graph_prompt\",\n]\nBASE_PATH = Path(\"./src/prompts\")\ndef fetch_all_prompts():\n    \"\"\"Fetch all configured prompts from LangSmith and save them locally.\"\"\"",
+        "detail": "prompts.load_prompts",
+        "documentation": {}
+    },
+    {
+        "label": "BASE_PATH",
+        "kind": 5,
+        "importPath": "prompts.load_prompts",
+        "description": "prompts.load_prompts",
+        "peekOfCode": "BASE_PATH = Path(\"./src/prompts\")\ndef fetch_all_prompts():\n    \"\"\"Fetch all configured prompts from LangSmith and save them locally.\"\"\"\n    for p in VALID_PROMPTS:\n        text = \"\"\n        try:\n            prompt = client.pull_prompt(p)\n            text = extract_langsmith_prompt(prompt)\n        except Exception as e:\n            logger.warning(f\"Failed to get prompt {p} Error: {e}\\n Double check name\")",
+        "detail": "prompts.load_prompts",
+        "documentation": {}
+    },
+    {
+        "label": "extract_langsmith_prompt",
+        "kind": 2,
+        "importPath": "utils.langsmith_utils",
+        "description": "utils.langsmith_utils",
+        "peekOfCode": "def extract_langsmith_prompt(base) -> str:\n    try:\n        if not isinstance(base, ChatPromptTemplate):\n            raise ValueError(\"expected a ChatPromptTemplate\")\n        if not base.messages:\n            raise ValueError(\"ChatPromptTemplate.messages is empty\")\n        messages = base.messages[0]\n        if hasattr(messages, \"prompt\") and getattr(messages, \"prompt\") is not None and hasattr(messages.prompt, \"template\"):  # type: ignore\n            template = messages.prompt.template  # type: ignore\n        elif isinstance(messages, SystemMessage):",
+        "detail": "utils.langsmith_utils",
+        "documentation": {}
+    },
+    {
+        "label": "to_serializable",
+        "kind": 2,
+        "importPath": "utils.serialization_utils",
+        "description": "utils.serialization_utils",
+        "peekOfCode": "def to_serializable(obj: Any) -> Any:\n    \"\"\"\n    Recursively convert Pydantic models (and nested dicts/lists thereof)\n    into plain Python data structures.\n    \"\"\"\n    if isinstance(obj, BaseModel):\n        return obj.model_dump()\n    if isinstance(obj, dict):\n        return {k: to_serializable(v) for k, v in obj.items()}\n    if isinstance(obj, list):",
+        "detail": "utils.serialization_utils",
+        "documentation": {}
+    },
+    {
+        "label": "write_image_data",
+        "kind": 2,
+        "importPath": "utils.visualization_utils",
+        "description": "utils.visualization_utils",
+        "peekOfCode": "def write_image_data(image_bytes: bytes, folder_path: str | Path, filename: str) -> str:\n    try:\n        path = Path(folder_path).resolve()\n        path.mkdir(exist_ok=True)\n        save_path = path / filename\n        if save_path.suffix != \".png\":\n            raise ValueError(\n                \"Suffix allowed is only PNG either missing or nnot allowed\"\n            )\n        save_path.write_bytes(image_bytes)",
+        "detail": "utils.visualization_utils",
+        "documentation": {}
+    },
+    {
+        "label": "save_graph_visualization",
+        "kind": 2,
+        "importPath": "utils.visualization_utils",
+        "description": "utils.visualization_utils",
+        "peekOfCode": "def save_graph_visualization(\n    graph: CompiledStateGraph | Any,\n    folder_path: str | Path,\n    filename: str,\n):\n    try:\n        image_bytes = graph.get_graph().draw_mermaid_png()\n        save_path = write_image_data(image_bytes, folder_path, filename)\n        print(f\"✅ Saved graph visualization at: {save_path}\")\n    except ValueError:",
+        "detail": "utils.visualization_utils",
+        "documentation": {}
+    }
+]
